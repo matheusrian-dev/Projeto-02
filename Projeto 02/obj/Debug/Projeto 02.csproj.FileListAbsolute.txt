@@ -1,1 +1,9 @@
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\bin\Debug\Projeto 02.exe.config
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\bin\Debug\Projeto 02.exe
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\bin\Debug\Projeto 02.pdb
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.Properties.Resources.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto 02.csproj.GenerateResource.Cache
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto 02.exe
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto 02.pdb
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormLogin.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlEsqueceuSenha.resources
