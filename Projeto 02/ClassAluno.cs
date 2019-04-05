@@ -14,7 +14,8 @@ namespace Projeto_02
         public string NomeResponsavel { get; set; }
         public string TelefoneContato { get; set; }
         public string Endereco { get; set; }
-        public string serie { get; set; }
+        public string Serie { get; set; }
+        public string Sexo { get; set; }
 
     }
 }

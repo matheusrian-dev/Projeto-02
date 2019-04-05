@@ -11,6 +11,6 @@ namespace Projeto_02
         public int CodTurma { get; set; }
         public string Nome { get; set; }
         public int QuantidadeAlunos { get; set; }
-        public string CursoDesignado { get; set; }
+        public int Curso_CodCurso { get; set; }
     }
 }

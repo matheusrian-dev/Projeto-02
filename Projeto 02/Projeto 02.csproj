@@ -47,14 +47,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassAluno.cs" />
+    <Compile Include="ClassBoletim.cs" />
+    <Compile Include="ClassCertificado.cs" />
     <Compile Include="ClassCurso.cs" />
+    <Compile Include="ClassDiploma.cs" />
+    <Compile Include="ClassDistribuicaoPontos.cs" />
+    <Compile Include="ClassFrequenciaAluno.cs" />
+    <Compile Include="ClassFrequenciaFuncionario.cs" />
     <Compile Include="ClassFuncionario.cs" />
+    <Compile Include="ClassHistorico.cs" />
+    <Compile Include="ClassNota.cs" />
     <Compile Include="ClassTurma.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuDiretor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuDiretor.Designer.cs">
+      <DependentUpon>FormMenuDiretor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuDiretor.resx">
+      <DependentUpon>FormMenuDiretor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
