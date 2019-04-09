@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -72,11 +76,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlCoordenador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCoordenador.Designer.cs">
+      <DependentUpon>UserControlCoordenador.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlEsqueceuSenha.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlEsqueceuSenha.Designer.cs">
       <DependentUpon>UserControlEsqueceuSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarCurso.Designer.cs">
+      <DependentUpon>UserControlGerenciarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarPedagogo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarPedagogo.Designer.cs">
+      <DependentUpon>UserControlGerenciarPedagogo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -93,9 +115,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControlCoordenador.resx">
+      <DependentUpon>UserControlCoordenador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlEsqueceuSenha.resx">
       <DependentUpon>UserControlEsqueceuSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarCurso.resx">
+      <DependentUpon>UserControlGerenciarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarPedagogo.resx">
+      <DependentUpon>UserControlGerenciarPedagogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

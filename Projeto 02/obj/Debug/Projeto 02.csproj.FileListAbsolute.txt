@@ -7,3 +7,8 @@ C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto 02.exe
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto 02.pdb
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormLogin.resources
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlEsqueceuSenha.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\bin\Debug\MaterialDesignColors.dll
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormMenuDiretor.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarCurso.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarPedagogo.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlCoordenador.resources

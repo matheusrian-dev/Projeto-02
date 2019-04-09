@@ -74,6 +74,13 @@ namespace Projeto_02
             userControlEsqueceuSenha1.Visible = false;
         }
 
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            FormMenuDiretor diretor = new FormMenuDiretor();
+            this.Hide();
+            diretor.Show();
+        }
+
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
