@@ -35,7 +35,6 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelDropDownMenu = new System.Windows.Forms.Panel();
             this.labelEmitirRelatorioFrequencia = new System.Windows.Forms.Label();
             this.labelGerenciarAuxiliar = new System.Windows.Forms.Label();
@@ -47,8 +46,13 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.userControlGerenciarCurso1 = new Projeto_02.UserControlGerenciarCurso();
             this.userControlGerenciarPedagogo1 = new Projeto_02.UserControlGerenciarPedagogo();
+            this.userControlGerenciarCoordenador1 = new Projeto_02.UserControlGerenciarCoordenador();
+            this.userControlGerenciarCurso1 = new Projeto_02.UserControlGerenciarCurso();
+            this.userControlGerenciarBibliotecario1 = new Projeto_02.UserControlGerenciarBibliotecario();
+            this.userControlGerenciarAuxiliarSG1 = new Projeto_02.UserControlGerenciarAuxiliarSG();
+            this.userControlGerenciarSecretario1 = new Projeto_02.UserControlGerenciarSecretario();
+            this.userControlRelatorioFrequenciaFuncionarios1 = new Projeto_02.UserControlRelatorioFrequenciaFuncionarios();
             this.panelSuperior.SuspendLayout();
             this.panelDropDownMenu.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +64,6 @@
             this.panelSuperior.Controls.Add(this.btnMinimizar);
             this.panelSuperior.Controls.Add(this.btnFechar);
             this.panelSuperior.Controls.Add(this.button2);
-            this.panelSuperior.Controls.Add(this.button1);
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
@@ -104,7 +107,7 @@
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Location = new System.Drawing.Point(662, 7);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(45, 32);
+            this.btnFechar.Size = new System.Drawing.Size(36, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
@@ -119,17 +122,6 @@
             this.button2.Size = new System.Drawing.Size(36, 32);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(662, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 32);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // panelDropDownMenu
             // 
@@ -156,6 +148,7 @@
             this.labelEmitirRelatorioFrequencia.Size = new System.Drawing.Size(203, 44);
             this.labelEmitirRelatorioFrequencia.TabIndex = 9;
             this.labelEmitirRelatorioFrequencia.Text = "Emitir Relatório de \r\nFrequência dos Funcionários";
+            this.labelEmitirRelatorioFrequencia.Click += new System.EventHandler(this.labelEmitirRelatorioFrequencia_Click);
             // 
             // labelGerenciarAuxiliar
             // 
@@ -167,6 +160,7 @@
             this.labelGerenciarAuxiliar.Size = new System.Drawing.Size(156, 44);
             this.labelGerenciarAuxiliar.TabIndex = 8;
             this.labelGerenciarAuxiliar.Text = "Gerenciar Auxiliar de \r\nServiços Gerais";
+            this.labelGerenciarAuxiliar.Click += new System.EventHandler(this.labelGerenciarAuxiliar_Click);
             // 
             // labelGerenciarBibliotecario
             // 
@@ -178,6 +172,7 @@
             this.labelGerenciarBibliotecario.Size = new System.Drawing.Size(182, 22);
             this.labelGerenciarBibliotecario.TabIndex = 7;
             this.labelGerenciarBibliotecario.Text = "Gerenciar Bibliotecário(a)";
+            this.labelGerenciarBibliotecario.Click += new System.EventHandler(this.labelGerenciarBibliotecario_Click);
             // 
             // labelGerenciarSecretario
             // 
@@ -189,6 +184,7 @@
             this.labelGerenciarSecretario.Size = new System.Drawing.Size(165, 22);
             this.labelGerenciarSecretario.TabIndex = 6;
             this.labelGerenciarSecretario.Text = "Gerenciar Secretário(a)";
+            this.labelGerenciarSecretario.Click += new System.EventHandler(this.labelGerenciarSecretario_Click);
             // 
             // labelGerenciarCoordenador
             // 
@@ -200,6 +196,7 @@
             this.labelGerenciarCoordenador.Size = new System.Drawing.Size(187, 22);
             this.labelGerenciarCoordenador.TabIndex = 5;
             this.labelGerenciarCoordenador.Text = "Gerenciar Coordenador(a)";
+            this.labelGerenciarCoordenador.Click += new System.EventHandler(this.labelGerenciarCoordenador_Click);
             // 
             // labelGerenciarPedagogo
             // 
@@ -254,6 +251,22 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "EF";
             // 
+            // userControlGerenciarPedagogo1
+            // 
+            this.userControlGerenciarPedagogo1.BackColor = System.Drawing.Color.AliceBlue;
+            this.userControlGerenciarPedagogo1.Location = new System.Drawing.Point(0, 47);
+            this.userControlGerenciarPedagogo1.Name = "userControlGerenciarPedagogo1";
+            this.userControlGerenciarPedagogo1.Size = new System.Drawing.Size(710, 367);
+            this.userControlGerenciarPedagogo1.TabIndex = 7;
+            // 
+            // userControlGerenciarCoordenador1
+            // 
+            this.userControlGerenciarCoordenador1.BackColor = System.Drawing.Color.AliceBlue;
+            this.userControlGerenciarCoordenador1.Location = new System.Drawing.Point(0, 47);
+            this.userControlGerenciarCoordenador1.Name = "userControlGerenciarCoordenador1";
+            this.userControlGerenciarCoordenador1.Size = new System.Drawing.Size(710, 367);
+            this.userControlGerenciarCoordenador1.TabIndex = 8;
+            // 
             // userControlGerenciarCurso1
             // 
             this.userControlGerenciarCurso1.BackColor = System.Drawing.Color.AliceBlue;
@@ -262,13 +275,37 @@
             this.userControlGerenciarCurso1.Size = new System.Drawing.Size(710, 367);
             this.userControlGerenciarCurso1.TabIndex = 6;
             // 
-            // userControlGerenciarPedagogo1
+            // userControlGerenciarBibliotecario1
             // 
-            this.userControlGerenciarPedagogo1.BackColor = System.Drawing.Color.AliceBlue;
-            this.userControlGerenciarPedagogo1.Location = new System.Drawing.Point(0, 47);
-            this.userControlGerenciarPedagogo1.Name = "userControlGerenciarPedagogo1";
-            this.userControlGerenciarPedagogo1.Size = new System.Drawing.Size(710, 367);
-            this.userControlGerenciarPedagogo1.TabIndex = 7;
+            this.userControlGerenciarBibliotecario1.BackColor = System.Drawing.Color.AliceBlue;
+            this.userControlGerenciarBibliotecario1.Location = new System.Drawing.Point(0, 47);
+            this.userControlGerenciarBibliotecario1.Name = "userControlGerenciarBibliotecario1";
+            this.userControlGerenciarBibliotecario1.Size = new System.Drawing.Size(710, 367);
+            this.userControlGerenciarBibliotecario1.TabIndex = 9;
+            // 
+            // userControlGerenciarAuxiliarSG1
+            // 
+            this.userControlGerenciarAuxiliarSG1.BackColor = System.Drawing.Color.AliceBlue;
+            this.userControlGerenciarAuxiliarSG1.Location = new System.Drawing.Point(0, 47);
+            this.userControlGerenciarAuxiliarSG1.Name = "userControlGerenciarAuxiliarSG1";
+            this.userControlGerenciarAuxiliarSG1.Size = new System.Drawing.Size(710, 367);
+            this.userControlGerenciarAuxiliarSG1.TabIndex = 10;
+            // 
+            // userControlGerenciarSecretario1
+            // 
+            this.userControlGerenciarSecretario1.BackColor = System.Drawing.Color.AliceBlue;
+            this.userControlGerenciarSecretario1.Location = new System.Drawing.Point(0, 47);
+            this.userControlGerenciarSecretario1.Name = "userControlGerenciarSecretario1";
+            this.userControlGerenciarSecretario1.Size = new System.Drawing.Size(710, 367);
+            this.userControlGerenciarSecretario1.TabIndex = 11;
+            // 
+            // userControlRelatorioFrequenciaFuncionarios1
+            // 
+            this.userControlRelatorioFrequenciaFuncionarios1.BackColor = System.Drawing.Color.AliceBlue;
+            this.userControlRelatorioFrequenciaFuncionarios1.Location = new System.Drawing.Point(0, 47);
+            this.userControlRelatorioFrequenciaFuncionarios1.Name = "userControlRelatorioFrequenciaFuncionarios1";
+            this.userControlRelatorioFrequenciaFuncionarios1.Size = new System.Drawing.Size(710, 367);
+            this.userControlRelatorioFrequenciaFuncionarios1.TabIndex = 12;
             // 
             // FormMenuDiretor
             // 
@@ -280,8 +317,13 @@
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.panelDropDownMenu);
             this.Controls.Add(this.panelSuperior);
-            this.Controls.Add(this.userControlGerenciarCurso1);
             this.Controls.Add(this.userControlGerenciarPedagogo1);
+            this.Controls.Add(this.userControlGerenciarCoordenador1);
+            this.Controls.Add(this.userControlGerenciarCurso1);
+            this.Controls.Add(this.userControlGerenciarBibliotecario1);
+            this.Controls.Add(this.userControlGerenciarAuxiliarSG1);
+            this.Controls.Add(this.userControlGerenciarSecretario1);
+            this.Controls.Add(this.userControlRelatorioFrequenciaFuncionarios1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMenuDiretor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -300,7 +342,6 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelDropDownMenu;
         private System.Windows.Forms.Label labelGerenciarCurso;
         private System.Windows.Forms.Label labelEmitirRelatorioFrequencia;
@@ -315,5 +356,10 @@
         private System.Windows.Forms.Label label8;
         private UserControlGerenciarCurso userControlGerenciarCurso1;
         private UserControlGerenciarPedagogo userControlGerenciarPedagogo1;
+        private UserControlGerenciarCoordenador userControlGerenciarCoordenador1;
+        private UserControlGerenciarBibliotecario userControlGerenciarBibliotecario1;
+        private UserControlGerenciarAuxiliarSG userControlGerenciarAuxiliarSG1;
+        private UserControlGerenciarSecretario userControlGerenciarSecretario1;
+        private UserControlRelatorioFrequenciaFuncionarios userControlRelatorioFrequenciaFuncionarios1;
     }
 }

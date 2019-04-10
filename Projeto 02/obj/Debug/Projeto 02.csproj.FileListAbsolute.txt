@@ -11,4 +11,15 @@ C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\bin\Debug\MaterialDesignC
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormMenuDiretor.resources
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarCurso.resources
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarPedagogo.resources
-C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlCoordenador.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto 02.csprojResolveAssemblyReference.cache
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarAuxiliarSG.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarBibliotecario.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarCoordenador.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarSecretario.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlRelatorioFrequenciaFuncionarios.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormMenuCoordenador.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarConteudoCurso.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarPlanoAula.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarPlanoCurso.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarProfessor.resources
+C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.UserControlRelatorioFrequenciaProfessor.resources

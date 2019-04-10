@@ -21,6 +21,11 @@ namespace Projeto_02
             InitializeComponent();
             userControlGerenciarCurso1.Visible = false;
             userControlGerenciarPedagogo1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = false;
+            userControlGerenciarSecretario1.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -82,15 +87,85 @@ namespace Projeto_02
 
         private void labelGerenciarCurso_Click(object sender, EventArgs e)
         {
-            userControlGerenciarCurso1.Visible = true;
             userControlGerenciarPedagogo1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = false;
+            userControlGerenciarSecretario1.Visible = false;
+            userControlGerenciarCurso1.Visible = true;
             label8.Visible = false;
         }
 
         private void labelGerenciarPedagogo_Click(object sender, EventArgs e)
         {
             userControlGerenciarCurso1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = false;
+            userControlGerenciarSecretario1.Visible = false;
             userControlGerenciarPedagogo1.Visible = true;
+            label8.Visible = false;
+        }
+
+        private void labelGerenciarSecretario_Click(object sender, EventArgs e)
+        {
+            userControlGerenciarCurso1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = false;
+            userControlGerenciarPedagogo1.Visible = false;
+            userControlGerenciarSecretario1.Visible = true;
+            label8.Visible = false;
+        }
+
+        private void labelGerenciarCoordenador_Click(object sender, EventArgs e)
+        {
+            userControlGerenciarCurso1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = false;
+            userControlGerenciarPedagogo1.Visible = false;
+            userControlGerenciarSecretario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = true;
+            label8.Visible = false;
+        }
+
+        private void labelGerenciarBibliotecario_Click(object sender, EventArgs e)
+        {
+            userControlGerenciarCurso1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = false;
+            userControlGerenciarPedagogo1.Visible = false;
+            userControlGerenciarSecretario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = true;
+            label8.Visible = false;
+        }
+
+        private void labelGerenciarAuxiliar_Click(object sender, EventArgs e)
+        {
+            userControlGerenciarCurso1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = false;
+            userControlGerenciarPedagogo1.Visible = false;
+            userControlGerenciarSecretario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = true;
+            label8.Visible = false;
+        }
+
+        private void labelEmitirRelatorioFrequencia_Click(object sender, EventArgs e)
+        {
+            userControlGerenciarCurso1.Visible = false;
+            userControlGerenciarPedagogo1.Visible = false;
+            userControlGerenciarSecretario1.Visible = false;
+            userControlGerenciarCoordenador1.Visible = false;
+            userControlGerenciarBibliotecario1.Visible = false;
+            userControlGerenciarAuxiliarSG1.Visible = false;
+            userControlRelatorioFrequenciaFuncionarios1.Visible = true;
             label8.Visible = false;
         }
 

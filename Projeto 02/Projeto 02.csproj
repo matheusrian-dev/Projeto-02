@@ -68,6 +68,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuCoordenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuCoordenador.Designer.cs">
+      <DependentUpon>FormMenuCoordenador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuDiretor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,17 +82,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlCoordenador.cs">
+    <Compile Include="UserControlGerenciarAuxiliarSG.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlCoordenador.Designer.cs">
-      <DependentUpon>UserControlCoordenador.cs</DependentUpon>
+    <Compile Include="UserControlGerenciarAuxiliarSG.Designer.cs">
+      <DependentUpon>UserControlGerenciarAuxiliarSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarConteudoCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarConteudoCurso.Designer.cs">
+      <DependentUpon>UserControlGerenciarConteudoCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarCoordenador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarCoordenador.Designer.cs">
+      <DependentUpon>UserControlGerenciarCoordenador.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlEsqueceuSenha.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlEsqueceuSenha.Designer.cs">
       <DependentUpon>UserControlEsqueceuSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarBibliotecario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarBibliotecario.Designer.cs">
+      <DependentUpon>UserControlGerenciarBibliotecario.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlGerenciarCurso.cs">
       <SubType>UserControl</SubType>
@@ -100,8 +124,47 @@
     <Compile Include="UserControlGerenciarPedagogo.Designer.cs">
       <DependentUpon>UserControlGerenciarPedagogo.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlGerenciarPlanoAula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarPlanoAula.Designer.cs">
+      <DependentUpon>UserControlGerenciarPlanoAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarPlanoCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarPlanoCurso.Designer.cs">
+      <DependentUpon>UserControlGerenciarPlanoCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarProfessor.Designer.cs">
+      <DependentUpon>UserControlGerenciarProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlGerenciarSecretario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlGerenciarSecretario.Designer.cs">
+      <DependentUpon>UserControlGerenciarSecretario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlRelatorioFrequenciaFuncionarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlRelatorioFrequenciaFuncionarios.Designer.cs">
+      <DependentUpon>UserControlRelatorioFrequenciaFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlRelatorioFrequenciaProfessor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlRelatorioFrequenciaProfessor.Designer.cs">
+      <DependentUpon>UserControlRelatorioFrequenciaProfessor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuCoordenador.resx">
+      <DependentUpon>FormMenuCoordenador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuDiretor.resx">
       <DependentUpon>FormMenuDiretor.cs</DependentUpon>
@@ -115,8 +178,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControlCoordenador.resx">
-      <DependentUpon>UserControlCoordenador.cs</DependentUpon>
+    <EmbeddedResource Include="UserControlGerenciarAuxiliarSG.resx">
+      <DependentUpon>UserControlGerenciarAuxiliarSG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarBibliotecario.resx">
+      <DependentUpon>UserControlGerenciarBibliotecario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarConteudoCurso.resx">
+      <DependentUpon>UserControlGerenciarConteudoCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarCoordenador.resx">
+      <DependentUpon>UserControlGerenciarCoordenador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlEsqueceuSenha.resx">
       <DependentUpon>UserControlEsqueceuSenha.cs</DependentUpon>
@@ -126,6 +198,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlGerenciarPedagogo.resx">
       <DependentUpon>UserControlGerenciarPedagogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarPlanoAula.resx">
+      <DependentUpon>UserControlGerenciarPlanoAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarPlanoCurso.resx">
+      <DependentUpon>UserControlGerenciarPlanoCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarProfessor.resx">
+      <DependentUpon>UserControlGerenciarProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlGerenciarSecretario.resx">
+      <DependentUpon>UserControlGerenciarSecretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlRelatorioFrequenciaFuncionarios.resx">
+      <DependentUpon>UserControlRelatorioFrequenciaFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlRelatorioFrequenciaProfessor.resx">
+      <DependentUpon>UserControlRelatorioFrequenciaProfessor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
