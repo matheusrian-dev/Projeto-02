@@ -10,9 +10,6 @@ namespace Projeto_02
     {
         public int CodCurso { get; set; }
         public string Nome { get; set; }
-        public string Disciplina { get; set; }
-        public string InstrutorResponsavel { get; set; }
-        public DateTime DataInicio { get; set; }
-        public DateTime DataTermino { get; set; }
+        public int CargaHoraria { get; set; }
     }
 }

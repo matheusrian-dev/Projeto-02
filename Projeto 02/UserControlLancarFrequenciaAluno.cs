@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_02
 {
-    public partial class UserControlGerenciarSecretario : UserControl
+    public partial class UserControlLancarFrequenciaAluno : UserControl
     {
-        public UserControlGerenciarSecretario()
+        public UserControlLancarFrequenciaAluno()
         {
             InitializeComponent();
         }

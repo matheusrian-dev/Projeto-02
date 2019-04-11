@@ -35,7 +35,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.userControlEsqueceuSenha1 = new Projeto_02.UserControlEsqueceuSenha();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,13 +116,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(244, 20);
             this.txtEmail.TabIndex = 1;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(46, 229);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(244, 20);
-            this.txtSenha.TabIndex = 2;
             // 
             // label1
             // 
@@ -210,12 +203,21 @@
             this.userControlEsqueceuSenha1.Size = new System.Drawing.Size(344, 292);
             this.userControlEsqueceuSenha1.TabIndex = 9;
             // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(46, 229);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(244, 20);
+            this.txtSenha.TabIndex = 11;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(344, 339);
+            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnEntrar);
@@ -223,7 +225,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.userControlEsqueceuSenha1);
@@ -243,7 +244,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnFechar;
@@ -254,6 +254,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private UserControlEsqueceuSenha userControlEsqueceuSenha1;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
 

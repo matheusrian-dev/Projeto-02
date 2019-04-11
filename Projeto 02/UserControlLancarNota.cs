@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_02
 {
-    public partial class UserControlGerenciarAuxiliarSG : UserControl
+    public partial class UserControlLancarNota : UserControl
     {
-        public UserControlGerenciarAuxiliarSG()
+        public UserControlLancarNota()
         {
             InitializeComponent();
         }

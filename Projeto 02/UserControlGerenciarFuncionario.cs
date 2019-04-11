@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_02
 {
-    public partial class UserControlGerenciarBibliotecario : UserControl
+    public partial class UserControlGerenciarFuncionario : UserControl
     {
-        public UserControlGerenciarBibliotecario()
+        public UserControlGerenciarFuncionario()
         {
             InitializeComponent();
         }

@@ -16,7 +16,7 @@ namespace Projeto_02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMenuCoordenador());
+            Application.Run(new FormMenuDiretor());
         }
     }
 }
