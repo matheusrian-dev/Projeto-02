@@ -16,5 +16,17 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void btnRegistrarSecretarioFuncionario_Click(object sender, EventArgs e)
+        {
+            FormCadastrarFuncionario insertfuncionario = new FormCadastrarFuncionario();
+            insertfuncionario.Show();
+        }
+
+        private void btnGerenciarFuncionario_Click(object sender, EventArgs e)
+        {
+            FormEditarFuncionario editFuncionario = new FormEditarFuncionario();
+            editFuncionario.Show();
+        }
     }
 }

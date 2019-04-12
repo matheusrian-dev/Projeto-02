@@ -19,6 +19,7 @@ namespace Projeto_02
         public FormMenuSecretaria()
         {
             InitializeComponent();
+            // Esconde as telas de cada função para exibir somente a imagem inicial
             userControlEmissaoBoletim1.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
             userControlEmissaoCertificadoConclusao1.Visible = false;
@@ -73,6 +74,7 @@ namespace Projeto_02
 
         private void labelEmitirDiploma_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlEmissaoBoletim1.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
@@ -81,11 +83,13 @@ namespace Projeto_02
             userControlGerenciarTurma1.Visible = false;
             userControlHistoricoEscolar1.Visible = false;
             userControlRelatorioFrequenciaAluno1.Visible = false;
+            // Exibe a tela selecionada
             userControlEmissaoDiploma1.Visible = true;
         }
 
         private void labelEmitirFrequenciaAluno_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlEmissaoBoletim1.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
@@ -94,11 +98,13 @@ namespace Projeto_02
             userControlGerenciarTurma1.Visible = false;
             userControlHistoricoEscolar1.Visible = false;
             userControlEmissaoDiploma1.Visible = false;
+            // Exibe a tela selecionada
             userControlRelatorioFrequenciaAluno1.Visible = true;
         }
 
         private void labelEmitirHistoricoEscolar_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlEmissaoBoletim1.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
@@ -107,11 +113,13 @@ namespace Projeto_02
             userControlGerenciarTurma1.Visible = false;
             userControlEmissaoDiploma1.Visible = false;
             userControlRelatorioFrequenciaAluno1.Visible = false;
+            // Exibe a tela selecionada
             userControlHistoricoEscolar1.Visible = true;
         }
 
         private void labelEmitirBoletim_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
             userControlEmissaoCertificadoConclusao1.Visible = false;
@@ -120,11 +128,13 @@ namespace Projeto_02
             userControlEmissaoDiploma1.Visible = false;
             userControlRelatorioFrequenciaAluno1.Visible = false;
             userControlHistoricoEscolar1.Visible = false;
+            // Exibe a tela selecionada
             userControlEmissaoBoletim1.Visible = true;
         }
 
         private void labelEmitirCertificadoConclusao_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
             userControlGerenciarAluno1.Visible = false;
@@ -133,11 +143,13 @@ namespace Projeto_02
             userControlRelatorioFrequenciaAluno1.Visible = false;
             userControlHistoricoEscolar1.Visible = false;
             userControlEmissaoBoletim1.Visible = false;
+            // Exibe a tela selecionada
             userControlEmissaoCertificadoConclusao1.Visible = true;
         }
 
         private void labelEmitirCertificadoMatricula_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlGerenciarAluno1.Visible = false;
             userControlGerenciarTurma1.Visible = false;
@@ -146,11 +158,13 @@ namespace Projeto_02
             userControlHistoricoEscolar1.Visible = false;
             userControlEmissaoBoletim1.Visible = false;
             userControlEmissaoCertificadoConclusao1.Visible = false;
+            // Exibe a tela selecionada
             userControlEmissaoCertificadoMatricula1.Visible = true;
         }
 
         private void labelGerenciarAluno_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlGerenciarTurma1.Visible = false;
             userControlEmissaoDiploma1.Visible = false;
@@ -159,11 +173,13 @@ namespace Projeto_02
             userControlEmissaoBoletim1.Visible = false;
             userControlEmissaoCertificadoConclusao1.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
+            // Exibe a tela selecionada
             userControlGerenciarAluno1.Visible = true;
         }
 
         private void labelGerenciarTurmas_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlEmissaoDiploma1.Visible = false;
             userControlRelatorioFrequenciaAluno1.Visible = false;
@@ -172,11 +188,13 @@ namespace Projeto_02
             userControlEmissaoCertificadoConclusao1.Visible = false;
             userControlEmissaoCertificadoMatricula1.Visible = false;
             userControlGerenciarAluno1.Visible = false;
+            // Exibe a tela selecionada
             userControlGerenciarTurma1.Visible = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // Código responsável pelo movimento do DropDownMenu
             if (isPanelDropDownMenuOpen)
             {
                 panelDropDownMenu.Height -= 30;

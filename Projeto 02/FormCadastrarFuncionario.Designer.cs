@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastrarFuncionario));
             this.panelSuperior = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -46,9 +47,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnFuncionario = new System.Windows.Forms.Button();
+            this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,17 @@
             this.panelSuperior.Name = "panelSuperior";
             this.panelSuperior.Size = new System.Drawing.Size(595, 47);
             this.panelSuperior.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(191, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(212, 26);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Cadastro de Funcionário";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnMinimizar
             // 
@@ -99,7 +110,7 @@
             // mskCpf
             // 
             this.mskCpf.Location = new System.Drawing.Point(56, 90);
-            this.mskCpf.Mask = "999-999-999-99";
+            this.mskCpf.Mask = "999.999.999-99";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(230, 20);
             this.mskCpf.TabIndex = 3;
@@ -131,10 +142,10 @@
             this.cboCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCargo.FormattingEnabled = true;
             this.cboCargo.Items.AddRange(new object[] {
-            "Pedagogo",
-            "Coordenador",
-            "Secretário",
-            "Bibliotecário",
+            "Pedagogo(a)",
+            "Coordenador(a)",
+            "Secretário(a)",
+            "Bibliotecário(a)",
             "Auxiliar de Serviços Gerais"});
             this.cboCargo.Location = new System.Drawing.Point(312, 89);
             this.cboCargo.Name = "cboCargo";
@@ -230,16 +241,16 @@
             this.label7.Text = "CPF:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnFuncionario
+            // btnCadastrarFuncionario
             // 
-            this.btnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFuncionario.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFuncionario.Location = new System.Drawing.Point(358, 240);
-            this.btnFuncionario.Name = "btnFuncionario";
-            this.btnFuncionario.Size = new System.Drawing.Size(139, 65);
-            this.btnFuncionario.TabIndex = 16;
-            this.btnFuncionario.Text = "Cadastrar Funcionário";
-            this.btnFuncionario.UseVisualStyleBackColor = true;
+            this.btnCadastrarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrarFuncionario.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarFuncionario.Location = new System.Drawing.Point(358, 240);
+            this.btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
+            this.btnCadastrarFuncionario.Size = new System.Drawing.Size(139, 65);
+            this.btnCadastrarFuncionario.TabIndex = 16;
+            this.btnCadastrarFuncionario.Text = "Cadastrar Funcionário";
+            this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -252,17 +263,6 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "EF";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(191, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(212, 26);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Cadastro de Funcionário";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormCadastrarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,7 +270,7 @@
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(595, 386);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnFuncionario);
+            this.Controls.Add(this.btnCadastrarFuncionario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -287,6 +287,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.panelSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadastrarFuncionario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCadastrarFuncionario";
@@ -316,7 +317,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnFuncionario;
+        private System.Windows.Forms.Button btnCadastrarFuncionario;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
     }

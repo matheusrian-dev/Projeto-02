@@ -31,6 +31,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnEmitirFrequenciaFuncionario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
             // label8
@@ -68,11 +69,19 @@
             this.label1.Text = "Relatório de Frequência dos Funcionários";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(3, 50);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(704, 233);
+            this.reportViewer1.TabIndex = 53;
+            // 
             // UserControlRelatorioFrequenciaFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEmitirFrequenciaFuncionario);
             this.Controls.Add(this.label8);
@@ -87,5 +96,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnEmitirFrequenciaFuncionario;
         private System.Windows.Forms.Label label1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

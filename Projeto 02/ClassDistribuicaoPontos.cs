@@ -8,7 +8,7 @@ namespace Projeto_02
 {
     class ClassDistribuicaoPontos
     {
-        public int Cod_DistribuicaoPontos { get; set; }
+        public int CodDistribuicaoPontos { get; set; }
         public string NomeAtividade { get; set; }
         public int Valor { get; set; }
         public string Disciplina { get; set; }

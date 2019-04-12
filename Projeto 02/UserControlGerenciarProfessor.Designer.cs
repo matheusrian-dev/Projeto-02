@@ -56,6 +56,7 @@
             this.btnGerenciarProfessor.TabIndex = 16;
             this.btnGerenciarProfessor.Text = "Gerenciar Professor(a) Existente";
             this.btnGerenciarProfessor.UseVisualStyleBackColor = true;
+            this.btnGerenciarProfessor.Click += new System.EventHandler(this.btnGerenciarProfessor_Click);
             // 
             // btnRegistrarProfessor
             // 
@@ -68,6 +69,7 @@
             this.btnRegistrarProfessor.TabIndex = 15;
             this.btnRegistrarProfessor.Text = "Registrar Professor(a)";
             this.btnRegistrarProfessor.UseVisualStyleBackColor = true;
+            this.btnRegistrarProfessor.Click += new System.EventHandler(this.btnRegistrarProfessor_Click);
             // 
             // label1
             // 

@@ -9,8 +9,8 @@ namespace Projeto_02
     class ClassFrequenciaFuncionario
     {
         public DateTime DataReferente { get; set; }
-        public int Funcionario_Cpf { get; set; }
-        public string Funcionario_NomeFuncionario { get; set; }
-        public string Funcionario_StatusFrequenciaFuncionario { get; set; }
+        public int CpfFuncionario { get; set; }
+        public string NomeFuncionario { get; set; }
+        public string StatusFrequencia { get; set; }
     }
 }

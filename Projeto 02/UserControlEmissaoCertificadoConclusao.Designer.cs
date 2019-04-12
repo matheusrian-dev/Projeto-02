@@ -33,6 +33,7 @@
             this.txtNomeAlunoDesejado = new System.Windows.Forms.TextBox();
             this.btnEmitirCertificado = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
             // label8
@@ -50,7 +51,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(132, 265);
+            this.label2.Location = new System.Drawing.Point(142, 265);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 20);
             this.label2.TabIndex = 45;
@@ -58,7 +59,7 @@
             // 
             // txtNomeAlunoDesejado
             // 
-            this.txtNomeAlunoDesejado.Location = new System.Drawing.Point(136, 288);
+            this.txtNomeAlunoDesejado.Location = new System.Drawing.Point(146, 288);
             this.txtNomeAlunoDesejado.Name = "txtNomeAlunoDesejado";
             this.txtNomeAlunoDesejado.Size = new System.Drawing.Size(291, 20);
             this.txtNomeAlunoDesejado.TabIndex = 44;
@@ -68,7 +69,7 @@
             this.btnEmitirCertificado.FlatAppearance.BorderSize = 2;
             this.btnEmitirCertificado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmitirCertificado.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmitirCertificado.Location = new System.Drawing.Point(470, 272);
+            this.btnEmitirCertificado.Location = new System.Drawing.Point(480, 272);
             this.btnEmitirCertificado.Name = "btnEmitirCertificado";
             this.btnEmitirCertificado.Size = new System.Drawing.Size(89, 51);
             this.btnEmitirCertificado.TabIndex = 42;
@@ -78,19 +79,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(159, 0);
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(167, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 64);
+            this.label1.Size = new System.Drawing.Size(376, 56);
             this.label1.TabIndex = 43;
             this.label1.Text = "Emissão de Certificado de Conclusão \r\ndo Aluno";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(3, 54);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(704, 212);
+            this.reportViewer1.TabIndex = 52;
             // 
             // UserControlEmissaoCertificadoConclusao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNomeAlunoDesejado);
             this.Controls.Add(this.btnEmitirCertificado);
@@ -110,5 +119,6 @@
         private System.Windows.Forms.TextBox txtNomeAlunoDesejado;
         private System.Windows.Forms.Button btnEmitirCertificado;
         private System.Windows.Forms.Label label1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

@@ -13,5 +13,6 @@ namespace Projeto_02
         public DateTime DataEmissaoCertificado { get; set; }
         public string Aluno_NomeAluno { get; set; }
         public string Curso_NomeCurso { get; set; }
+        public int Turma_CodTurma { get; set; }
     }
 }

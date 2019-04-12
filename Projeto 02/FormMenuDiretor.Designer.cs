@@ -146,9 +146,9 @@
             this.labelGerenciarFuncionario.ForeColor = System.Drawing.Color.AliceBlue;
             this.labelGerenciarFuncionario.Location = new System.Drawing.Point(27, 48);
             this.labelGerenciarFuncionario.Name = "labelGerenciarFuncionario";
-            this.labelGerenciarFuncionario.Size = new System.Drawing.Size(165, 22);
+            this.labelGerenciarFuncionario.Size = new System.Drawing.Size(179, 22);
             this.labelGerenciarFuncionario.TabIndex = 6;
-            this.labelGerenciarFuncionario.Text = "Gerenciar Secretário(a)";
+            this.labelGerenciarFuncionario.Text = "Gerenciar Funcionário(a)";
             this.labelGerenciarFuncionario.Click += new System.EventHandler(this.labelGerenciarFuncionario_Click);
             // 
             // labelGerenciarCurso
@@ -238,6 +238,7 @@
             this.Controls.Add(this.userControlRelatorioFrequenciaFuncionarios1);
             this.Controls.Add(this.userControlGerenciarFuncionario1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenuDiretor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenuDiretor";

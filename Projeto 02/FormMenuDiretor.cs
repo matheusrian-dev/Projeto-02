@@ -19,6 +19,7 @@ namespace Projeto_02
         public FormMenuDiretor()
         {
             InitializeComponent();
+            // Esconde as telas de cada função para exibir somente a imagem inicial
             userControlGerenciarCurso1.Visible = false;
             userControlRelatorioFrequenciaFuncionarios1.Visible = false;
             userControlGerenciarFuncionario1.Visible = false;
@@ -26,6 +27,7 @@ namespace Projeto_02
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // Código responsável pelo movimento do DropDownMenu
             if (isPanelDropDownMenuOpen)
             {
                 panelDropDownMenu.Height -= 35;
@@ -83,27 +85,33 @@ namespace Projeto_02
 
         private void labelGerenciarCurso_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             userControlRelatorioFrequenciaFuncionarios1.Visible = false;
             userControlGerenciarFuncionario1.Visible = false;
-            userControlGerenciarCurso1.Visible = true;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlGerenciarCurso1.Visible = true;
         }
 
         private void labelGerenciarFuncionario_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             userControlGerenciarCurso1.Visible = false;
             userControlRelatorioFrequenciaFuncionarios1.Visible = false;
-            userControlGerenciarFuncionario1.Visible = true;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlGerenciarFuncionario1.Visible = true;
         }
-        
+
 
         private void labelEmitirRelatorioFrequencia_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             userControlGerenciarCurso1.Visible = false;
-            userControlRelatorioFrequenciaFuncionarios1.Visible = true;
             userControlGerenciarFuncionario1.Visible = false;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlRelatorioFrequenciaFuncionarios1.Visible = true;
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

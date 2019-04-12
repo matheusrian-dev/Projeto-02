@@ -97,6 +97,7 @@
             this.btnEnviarSenha.TabIndex = 12;
             this.btnEnviarSenha.Text = "Enviar Senha";
             this.btnEnviarSenha.UseVisualStyleBackColor = true;
+            this.btnEnviarSenha.Click += new System.EventHandler(this.btnEnviarSenha_Click);
             // 
             // UserControlEsqueceuSenha
             // 

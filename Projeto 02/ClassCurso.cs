@@ -11,5 +11,6 @@ namespace Projeto_02
         public int CodCurso { get; set; }
         public string Nome { get; set; }
         public int CargaHoraria { get; set; }
+        public string Descricao { get; set; }
     }
 }

@@ -44,6 +44,7 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.userControlEsqueceuSenha1 = new Projeto_02.UserControlEsqueceuSenha();
             this.txtSenha = new System.Windows.Forms.TextBox();
+            this.btnShowHidePassword = new System.Windows.Forms.Button();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,11 +142,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(93, 102);
+            this.label3.Location = new System.Drawing.Point(55, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 26);
+            this.label3.Size = new System.Drawing.Size(234, 26);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Escola do Futuro";
+            this.label3.Text = "Escola Educação do Futuro";
             // 
             // label4
             // 
@@ -211,12 +212,26 @@
             this.txtSenha.Size = new System.Drawing.Size(244, 20);
             this.txtSenha.TabIndex = 11;
             // 
+            // btnShowHidePassword
+            // 
+            this.btnShowHidePassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShowHidePassword.BackgroundImage")));
+            this.btnShowHidePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShowHidePassword.FlatAppearance.BorderSize = 0;
+            this.btnShowHidePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowHidePassword.Location = new System.Drawing.Point(296, 226);
+            this.btnShowHidePassword.Name = "btnShowHidePassword";
+            this.btnShowHidePassword.Size = new System.Drawing.Size(36, 23);
+            this.btnShowHidePassword.TabIndex = 12;
+            this.btnShowHidePassword.UseVisualStyleBackColor = true;
+            this.btnShowHidePassword.Click += new System.EventHandler(this.btnShowHidePassword_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(344, 339);
+            this.Controls.Add(this.btnShowHidePassword);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.linkLabel1);
@@ -229,6 +244,7 @@
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.userControlEsqueceuSenha1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -255,6 +271,7 @@
         private UserControlEsqueceuSenha userControlEsqueceuSenha1;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button btnShowHidePassword;
     }
 }
 

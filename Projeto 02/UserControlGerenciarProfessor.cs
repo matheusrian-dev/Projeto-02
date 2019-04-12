@@ -16,5 +16,17 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void btnGerenciarProfessor_Click(object sender, EventArgs e)
+        {
+            FormEditarProfessor editProf = new FormEditarProfessor();
+            editProf.Show();
+        }
+
+        private void btnRegistrarProfessor_Click(object sender, EventArgs e)
+        {
+            FormCadastrarProfessor insertProf = new FormCadastrarProfessor();
+            insertProf.Show();
+        }
     }
 }

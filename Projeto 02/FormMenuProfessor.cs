@@ -19,6 +19,7 @@ namespace Projeto_02
         public FormMenuProfessor()
         {
             InitializeComponent();
+            // Esconde as telas de cada função para exibir somente a imagem inicial
             userControlLancarDistribuicaoPontos1.Visible = false;
             userControlLancarFrequenciaAluno1.Visible = false;
             userControlLancarNota1.Visible = false;
@@ -69,42 +70,51 @@ namespace Projeto_02
 
         private void labelLancarDistribuicaoPontos_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlLancarFrequenciaAluno1.Visible = false;
             userControlLancarNota1.Visible = false;
             userControlLancarPlanoAula1.Visible = false;
+            // Exibe a tela selecionada
             userControlLancarDistribuicaoPontos1.Visible = true;
         }
 
         private void labelLancarFrequenciaAluno_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlLancarNota1.Visible = false;
             userControlLancarPlanoAula1.Visible = false;
             userControlLancarDistribuicaoPontos1.Visible = false;
+            // Exibe a tela selecionada
             userControlLancarFrequenciaAluno1.Visible = true;
         }
 
         private void labelLancarNota_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlLancarPlanoAula1.Visible = false;
             userControlLancarDistribuicaoPontos1.Visible = false;
             userControlLancarFrequenciaAluno1.Visible = false;
+            // Exibe a tela selecionada
             userControlLancarNota1.Visible = true;
         }
 
         private void labelLancarPlanoAula_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             label8.Visible = false;
             userControlLancarDistribuicaoPontos1.Visible = false;
             userControlLancarFrequenciaAluno1.Visible = false;
             userControlLancarNota1.Visible = false;
+            // Exibe a tela selecionada
             userControlLancarPlanoAula1.Visible = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // Código responsável pelo movimento do DropDownMenu
             if (isPanelDropDownMenuOpen)
             {
                 panelDropDownMenu.Height -= 40;

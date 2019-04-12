@@ -19,6 +19,7 @@ namespace Projeto_02
         public FormMenuCoordenador()
         {
             InitializeComponent();
+            // Esconde as telas de cada função para exibir somente a imagem inicial
             userControlGerenciarConteudoCurso1.Visible = false;
             userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
@@ -60,6 +61,7 @@ namespace Projeto_02
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // Código responsável pelo movimento do DropDownMenu
             if (isPanelDropDownMenuOpen)
             {
                 panelDropDownMenu.Height -= 40;
@@ -88,52 +90,62 @@ namespace Projeto_02
 
         private void labelGerenciarProfessor_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             userControlGerenciarConteudoCurso1.Visible = false;
             userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
-            userControlGerenciarProfessor1.Visible = true;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlGerenciarProfessor1.Visible = true;
         }
 
         private void labelGerenciarPlanoCurso_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             userControlGerenciarConteudoCurso1.Visible = false;
             userControlGerenciarPlanoAula1.Visible = false;
-            userControlGerenciarPlanoCurso1.Visible = true;
             userControlGerenciarProfessor1.Visible = false;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlGerenciarPlanoCurso1.Visible = true;
         }
 
         private void labelGerenciarPlanoAula_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             userControlGerenciarConteudoCurso1.Visible = false;
-            userControlGerenciarPlanoAula1.Visible = true;
             userControlGerenciarPlanoCurso1.Visible = false;
             userControlGerenciarProfessor1.Visible = false;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlGerenciarPlanoAula1.Visible = true;
         }
 
         private void labelGerenciarConteudoCurso_Click(object sender, EventArgs e)
         {
-            userControlGerenciarConteudoCurso1.Visible = true;
+            // Esconde as telas não selecionadas
             userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
             userControlGerenciarProfessor1.Visible = false;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlGerenciarConteudoCurso1.Visible = true;
         }
 
         private void labelEmitirRelatorioFrequenciaProfessor_Click(object sender, EventArgs e)
         {
+            // Esconde as telas não selecionadas
             userControlGerenciarConteudoCurso1.Visible = false;
             userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
             userControlGerenciarProfessor1.Visible = false;
-            userControlRelatorioFrequenciaProfessor1.Visible = true;
             label8.Visible = false;
+            // Exibe a tela selecionada
+            userControlRelatorioFrequenciaProfessor1.Visible = true;
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

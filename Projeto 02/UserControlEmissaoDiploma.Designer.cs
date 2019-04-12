@@ -33,6 +33,7 @@
             this.btnEmitirDiploma = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
             // label2
@@ -86,11 +87,19 @@
             this.label8.TabIndex = 56;
             this.label8.Text = "EF";
             // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(3, 63);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(704, 212);
+            this.reportViewer1.TabIndex = 61;
+            // 
             // UserControlEmissaoDiploma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNomeAlunoDesejado);
             this.Controls.Add(this.btnEmitirDiploma);
@@ -110,5 +119,6 @@
         private System.Windows.Forms.Button btnEmitirDiploma;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

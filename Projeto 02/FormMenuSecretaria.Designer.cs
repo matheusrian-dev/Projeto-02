@@ -349,6 +349,7 @@
             this.Controls.Add(this.userControlHistoricoEscolar1);
             this.Controls.Add(this.userControlEmissaoDiploma1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenuSecretaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenuSecretaria";

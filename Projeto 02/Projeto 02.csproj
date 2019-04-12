@@ -37,8 +37,11 @@
       <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +70,24 @@
     </Compile>
     <Compile Include="FormCadastrarFuncionario.Designer.cs">
       <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarProfessor.Designer.cs">
+      <DependentUpon>FormCadastrarProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarFuncionario.Designer.cs">
+      <DependentUpon>FormEditarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarProfessor.Designer.cs">
+      <DependentUpon>FormEditarProfessor.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -228,6 +249,15 @@
     </Compile>
     <EmbeddedResource Include="FormCadastrarFuncionario.resx">
       <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrarProfessor.resx">
+      <DependentUpon>FormCadastrarProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarFuncionario.resx">
+      <DependentUpon>FormEditarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarProfessor.resx">
+      <DependentUpon>FormEditarProfessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

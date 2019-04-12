@@ -17,11 +17,18 @@ namespace Projeto_02
             InitializeComponent();
         }
 
-        private void btnVoltar_Click(object sender, EventArgs e)
+        private void btnEnviarSenha_Click(object sender, EventArgs e)
         {
-            FormLogin login = new FormLogin();
-            this.Hide();
-            login.Show();
+            ClassFuncionario funcionario = new ClassFuncionario();
+            //funcionario.EsqueceuSenha(txtEmail.Text);
+            //if (funcionario.EsqueceuSenha(txtEmail.Text) == true)
+            //{
+            //    MessageBox.Show("Email Enviado com Sucesso!");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Email não Encontrado.");
+            //}
         }
     }
 }

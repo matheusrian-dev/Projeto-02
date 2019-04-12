@@ -33,6 +33,7 @@
             this.btnEmitirRelatorio = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
             // label2
@@ -67,10 +68,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(155, 5);
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(174, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(400, 64);
+            this.label1.Size = new System.Drawing.Size(362, 56);
             this.label1.TabIndex = 53;
             this.label1.Text = "Emissão do Relatório de Frequência\r\ndo Aluno";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,11 +87,19 @@
             this.label8.TabIndex = 51;
             this.label8.Text = "EF";
             // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(3, 64);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(704, 212);
+            this.reportViewer1.TabIndex = 56;
+            // 
             // UserControlRelatorioFrequenciaAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNomeAlunoDesejado);
             this.Controls.Add(this.btnEmitirRelatorio);
@@ -110,5 +119,6 @@
         private System.Windows.Forms.Button btnEmitirRelatorio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

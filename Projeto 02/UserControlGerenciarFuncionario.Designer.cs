@@ -56,6 +56,7 @@
             this.btnGerenciarFuncionario.TabIndex = 12;
             this.btnGerenciarFuncionario.Text = "Gerenciar Funcionário Existente";
             this.btnGerenciarFuncionario.UseVisualStyleBackColor = true;
+            this.btnGerenciarFuncionario.Click += new System.EventHandler(this.btnGerenciarFuncionario_Click);
             // 
             // btnRegistrarSecretarioFuncionario
             // 
@@ -68,6 +69,7 @@
             this.btnRegistrarSecretarioFuncionario.TabIndex = 11;
             this.btnRegistrarSecretarioFuncionario.Text = "Registrar Funcionário";
             this.btnRegistrarSecretarioFuncionario.UseVisualStyleBackColor = true;
+            this.btnRegistrarSecretarioFuncionario.Click += new System.EventHandler(this.btnRegistrarSecretarioFuncionario_Click);
             // 
             // label1
             // 
@@ -79,7 +81,7 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Gerenciamento de Funcionários";
             // 
-            // UserControlGerenciarSecretario
+            // UserControlGerenciarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,7 +90,7 @@
             this.Controls.Add(this.btnGerenciarFuncionario);
             this.Controls.Add(this.btnRegistrarSecretarioFuncionario);
             this.Controls.Add(this.label1);
-            this.Name = "UserControlGerenciarSecretario";
+            this.Name = "UserControlGerenciarFuncionario";
             this.Size = new System.Drawing.Size(710, 367);
             this.ResumeLayout(false);
             this.PerformLayout();
