@@ -10,8 +10,9 @@ namespace Projeto_02
     {
         public int CodDistribuicaoPontos { get; set; }
         public string NomeAtividade { get; set; }
-        public int Valor { get; set; }
-        public string Disciplina { get; set; }
+        public decimal Valor { get; set; }
+        public string Materia { get; set; }
+        public int Curso_CodCurso { get; set; }
         public DateTime DataInicio { get; set; }
         public DateTime DataEntrega { get; set; }
     }

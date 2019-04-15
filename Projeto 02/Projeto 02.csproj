@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassAcessoBD.cs" />
     <Compile Include="ClassAluno.cs" />
     <Compile Include="ClassBoletim.cs" />
     <Compile Include="ClassCertificado.cs" />
@@ -65,6 +66,18 @@
     <Compile Include="ClassHistorico.cs" />
     <Compile Include="ClassNota.cs" />
     <Compile Include="ClassTurma.cs" />
+    <Compile Include="FormCadastrarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarAluno.Designer.cs">
+      <DependentUpon>FormCadastrarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarCurso.Designer.cs">
+      <DependentUpon>FormCadastrarCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCadastrarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +90,30 @@
     <Compile Include="FormCadastrarProfessor.Designer.cs">
       <DependentUpon>FormCadastrarProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCriarPlanoCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCriarPlanoCurso.Designer.cs">
+      <DependentUpon>FormCriarPlanoCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCriarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCriarTurma.Designer.cs">
+      <DependentUpon>FormCriarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarAluno.Designer.cs">
+      <DependentUpon>FormEditarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarCurso.Designer.cs">
+      <DependentUpon>FormEditarCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEditarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +125,18 @@
     </Compile>
     <Compile Include="FormEditarProfessor.Designer.cs">
       <DependentUpon>FormEditarProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEnturmarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEnturmarAluno.Designer.cs">
+      <DependentUpon>FormEnturmarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInserirConteudoCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInserirConteudoCurso.Designer.cs">
+      <DependentUpon>FormInserirConteudoCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -247,17 +296,41 @@
     <Compile Include="UserControlRelatorioFrequenciaProfessor.Designer.cs">
       <DependentUpon>UserControlRelatorioFrequenciaProfessor.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormCadastrarAluno.resx">
+      <DependentUpon>FormCadastrarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrarCurso.resx">
+      <DependentUpon>FormCadastrarCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCadastrarFuncionario.resx">
       <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastrarProfessor.resx">
       <DependentUpon>FormCadastrarProfessor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCriarPlanoCurso.resx">
+      <DependentUpon>FormCriarPlanoCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCriarTurma.resx">
+      <DependentUpon>FormCriarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarAluno.resx">
+      <DependentUpon>FormEditarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarCurso.resx">
+      <DependentUpon>FormEditarCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarFuncionario.resx">
       <DependentUpon>FormEditarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditarProfessor.resx">
       <DependentUpon>FormEditarProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEnturmarAluno.resx">
+      <DependentUpon>FormEnturmarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInserirConteudoCurso.resx">
+      <DependentUpon>FormInserirConteudoCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

@@ -16,6 +16,7 @@ namespace Projeto_02
         public string Endereco { get; set; }
         public string Turma_CodTurma { get; set; }
         public string Sexo { get; set; }
+        public string GrauEscolaridade { get; set; }
 
     }
 }
