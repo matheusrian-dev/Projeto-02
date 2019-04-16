@@ -37,7 +37,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panelDropDownMenu = new System.Windows.Forms.Panel();
             this.labelEmitirRelatorioFrequenciaProfessor = new System.Windows.Forms.Label();
-            this.labelGerenciarPlanoAula = new System.Windows.Forms.Label();
             this.labelGerenciarPlanoCurso = new System.Windows.Forms.Label();
             this.labelGerenciarConteudoCurso = new System.Windows.Forms.Label();
             this.labelGerenciarProfessor = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.userControlGerenciarProfessor1 = new Projeto_02.UserControlGerenciarProfessor();
             this.userControlGerenciarConteudoCurso1 = new Projeto_02.UserControlGerenciarConteudoCurso();
-            this.userControlGerenciarPlanoAula1 = new Projeto_02.UserControlGerenciarPlanoAula();
             this.userControlGerenciarPlanoCurso1 = new Projeto_02.UserControlGerenciarPlanoCurso();
             this.userControlRelatorioFrequenciaProfessor1 = new Projeto_02.UserControlRelatorioFrequenciaProfessor();
             this.panelSuperior.SuspendLayout();
@@ -123,7 +121,6 @@
             // 
             this.panelDropDownMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(142)))));
             this.panelDropDownMenu.Controls.Add(this.labelEmitirRelatorioFrequenciaProfessor);
-            this.panelDropDownMenu.Controls.Add(this.labelGerenciarPlanoAula);
             this.panelDropDownMenu.Controls.Add(this.labelGerenciarPlanoCurso);
             this.panelDropDownMenu.Controls.Add(this.labelGerenciarConteudoCurso);
             this.panelDropDownMenu.Controls.Add(this.labelGerenciarProfessor);
@@ -137,24 +134,12 @@
             this.labelEmitirRelatorioFrequenciaProfessor.AutoSize = true;
             this.labelEmitirRelatorioFrequenciaProfessor.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmitirRelatorioFrequenciaProfessor.ForeColor = System.Drawing.Color.AliceBlue;
-            this.labelEmitirRelatorioFrequenciaProfessor.Location = new System.Drawing.Point(27, 147);
+            this.labelEmitirRelatorioFrequenciaProfessor.Location = new System.Drawing.Point(27, 118);
             this.labelEmitirRelatorioFrequenciaProfessor.Name = "labelEmitirRelatorioFrequenciaProfessor";
             this.labelEmitirRelatorioFrequenciaProfessor.Size = new System.Drawing.Size(172, 44);
             this.labelEmitirRelatorioFrequenciaProfessor.TabIndex = 7;
             this.labelEmitirRelatorioFrequenciaProfessor.Text = "Emitir Relatório de\r\nFrequência do Professor";
             this.labelEmitirRelatorioFrequenciaProfessor.Click += new System.EventHandler(this.labelEmitirRelatorioFrequenciaProfessor_Click);
-            // 
-            // labelGerenciarPlanoAula
-            // 
-            this.labelGerenciarPlanoAula.AutoSize = true;
-            this.labelGerenciarPlanoAula.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGerenciarPlanoAula.ForeColor = System.Drawing.Color.AliceBlue;
-            this.labelGerenciarPlanoAula.Location = new System.Drawing.Point(27, 114);
-            this.labelGerenciarPlanoAula.Name = "labelGerenciarPlanoAula";
-            this.labelGerenciarPlanoAula.Size = new System.Drawing.Size(172, 22);
-            this.labelGerenciarPlanoAula.TabIndex = 6;
-            this.labelGerenciarPlanoAula.Text = "Gerenciar Plano de Aula";
-            this.labelGerenciarPlanoAula.Click += new System.EventHandler(this.labelGerenciarPlanoAula_Click);
             // 
             // labelGerenciarPlanoCurso
             // 
@@ -237,14 +222,6 @@
             this.userControlGerenciarConteudoCurso1.Size = new System.Drawing.Size(710, 367);
             this.userControlGerenciarConteudoCurso1.TabIndex = 8;
             // 
-            // userControlGerenciarPlanoAula1
-            // 
-            this.userControlGerenciarPlanoAula1.BackColor = System.Drawing.Color.AliceBlue;
-            this.userControlGerenciarPlanoAula1.Location = new System.Drawing.Point(0, 47);
-            this.userControlGerenciarPlanoAula1.Name = "userControlGerenciarPlanoAula1";
-            this.userControlGerenciarPlanoAula1.Size = new System.Drawing.Size(710, 367);
-            this.userControlGerenciarPlanoAula1.TabIndex = 9;
-            // 
             // userControlGerenciarPlanoCurso1
             // 
             this.userControlGerenciarPlanoCurso1.BackColor = System.Drawing.Color.AliceBlue;
@@ -271,11 +248,10 @@
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.panelDropDownMenu);
             this.Controls.Add(this.panelSuperior);
-            this.Controls.Add(this.userControlGerenciarProfessor1);
-            this.Controls.Add(this.userControlGerenciarConteudoCurso1);
-            this.Controls.Add(this.userControlGerenciarPlanoAula1);
             this.Controls.Add(this.userControlGerenciarPlanoCurso1);
             this.Controls.Add(this.userControlRelatorioFrequenciaProfessor1);
+            this.Controls.Add(this.userControlGerenciarProfessor1);
+            this.Controls.Add(this.userControlGerenciarConteudoCurso1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenuCoordenador";
@@ -298,7 +274,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panelDropDownMenu;
         private System.Windows.Forms.Label labelEmitirRelatorioFrequenciaProfessor;
-        private System.Windows.Forms.Label labelGerenciarPlanoAula;
         private System.Windows.Forms.Label labelGerenciarPlanoCurso;
         private System.Windows.Forms.Label labelGerenciarConteudoCurso;
         private System.Windows.Forms.Label labelGerenciarProfessor;
@@ -307,7 +282,6 @@
         private System.Windows.Forms.Label label8;
         private UserControlGerenciarProfessor userControlGerenciarProfessor1;
         private UserControlGerenciarConteudoCurso userControlGerenciarConteudoCurso1;
-        private UserControlGerenciarPlanoAula userControlGerenciarPlanoAula1;
         private UserControlGerenciarPlanoCurso userControlGerenciarPlanoCurso1;
         private UserControlRelatorioFrequenciaProfessor userControlRelatorioFrequenciaProfessor1;
     }

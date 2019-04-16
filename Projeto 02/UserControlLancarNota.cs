@@ -16,5 +16,10 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void btnLancarNotaAluno_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

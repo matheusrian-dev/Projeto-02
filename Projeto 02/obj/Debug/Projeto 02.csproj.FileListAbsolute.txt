@@ -49,3 +49,65 @@ C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\bin\Debug\zh-Hant\Microso
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormCadastrarProfessor.resources
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormEditarFuncionario.resources
 C:\Users\ti20\Desktop\Projeto 02\Projeto 02\Projeto 02\obj\Debug\Projeto_02.FormEditarProfessor.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\Projeto 02.exe.config
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\Projeto 02.exe
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\Projeto 02.pdb
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\MaterialDesignColors.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto 02.csprojResolveAssemblyReference.cache
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormCadastrarAluno.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormCadastrarCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormCadastrarFuncionario.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormCadastrarProfessor.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormCriarPlanoAula.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormCriarPlanoCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormCriarTurma.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarAluno.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarFuncionario.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarProfessor.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEnturmarAluno.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormInserirConteudoCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormLogin.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormMenuCoordenador.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormMenuDiretor.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormMenuProfessor.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormMenuSecretaria.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.Properties.Resources.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlEmissaoBoletim.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlEmissaoCertificadoConclusao.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlEmissaoCertificadoMatricula.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlEmissaoDiploma.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarAluno.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarConteudoCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlEsqueceuSenha.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarPlanoCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarProfessor.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarFuncionario.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlGerenciarTurma.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlHistoricoEscolar.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlLancarDistribuicaoPontos.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlLancarFrequenciaAluno.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlLancarNota.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlLancarPlanoAula.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlRelatorioFrequenciaAluno.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlRelatorioFrequenciaFuncionarios.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.UserControlRelatorioFrequenciaProfessor.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto 02.csproj.GenerateResource.Cache
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto 02.exe
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto 02.pdb
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarConteudoCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarPlanoAula.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarPlanoCurso.resources

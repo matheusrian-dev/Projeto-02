@@ -90,6 +90,12 @@
     <Compile Include="FormCadastrarProfessor.Designer.cs">
       <DependentUpon>FormCadastrarProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCriarPlanoAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCriarPlanoAula.Designer.cs">
+      <DependentUpon>FormCriarPlanoAula.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCriarPlanoCurso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,17 +114,41 @@
     <Compile Include="FormEditarAluno.Designer.cs">
       <DependentUpon>FormEditarAluno.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEditarConteudoCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarConteudoCurso.Designer.cs">
+      <DependentUpon>FormEditarConteudoCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEditarCurso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEditarCurso.Designer.cs">
       <DependentUpon>FormEditarCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEditarDistribuicaoPontos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarDistribuicaoPontos.Designer.cs">
+      <DependentUpon>FormEditarDistribuicaoPontos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEditarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEditarFuncionario.Designer.cs">
       <DependentUpon>FormEditarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarPlanoAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarPlanoAula.Designer.cs">
+      <DependentUpon>FormEditarPlanoAula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarPlanoCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarPlanoCurso.Designer.cs">
+      <DependentUpon>FormEditarPlanoCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEditarProfessor.cs">
       <SubType>Form</SubType>
@@ -218,12 +248,6 @@
     <Compile Include="UserControlGerenciarCurso.Designer.cs">
       <DependentUpon>UserControlGerenciarCurso.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlGerenciarPlanoAula.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlGerenciarPlanoAula.Designer.cs">
-      <DependentUpon>UserControlGerenciarPlanoAula.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControlGerenciarPlanoCurso.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -308,6 +332,9 @@
     <EmbeddedResource Include="FormCadastrarProfessor.resx">
       <DependentUpon>FormCadastrarProfessor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCriarPlanoAula.resx">
+      <DependentUpon>FormCriarPlanoAula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCriarPlanoCurso.resx">
       <DependentUpon>FormCriarPlanoCurso.cs</DependentUpon>
     </EmbeddedResource>
@@ -317,11 +344,23 @@
     <EmbeddedResource Include="FormEditarAluno.resx">
       <DependentUpon>FormEditarAluno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarConteudoCurso.resx">
+      <DependentUpon>FormEditarConteudoCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarCurso.resx">
       <DependentUpon>FormEditarCurso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarDistribuicaoPontos.resx">
+      <DependentUpon>FormEditarDistribuicaoPontos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditarFuncionario.resx">
       <DependentUpon>FormEditarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarPlanoAula.resx">
+      <DependentUpon>FormEditarPlanoAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarPlanoCurso.resx">
+      <DependentUpon>FormEditarPlanoCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditarProfessor.resx">
       <DependentUpon>FormEditarProfessor.cs</DependentUpon>
@@ -379,9 +418,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlGerenciarCurso.resx">
       <DependentUpon>UserControlGerenciarCurso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlGerenciarPlanoAula.resx">
-      <DependentUpon>UserControlGerenciarPlanoAula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlGerenciarPlanoCurso.resx">
       <DependentUpon>UserControlGerenciarPlanoCurso.cs</DependentUpon>

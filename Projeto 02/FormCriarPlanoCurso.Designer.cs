@@ -34,13 +34,13 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtListaAtividades = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtCodCurso = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtCargaHoraria = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCodCursoRef = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtMateriaRef = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnCadastrarPlanoCurso = new System.Windows.Forms.Button();
             this.panelSuperior.SuspendLayout();
@@ -98,18 +98,18 @@
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(73, 298);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 18);
+            this.label4.Size = new System.Drawing.Size(194, 18);
             this.label4.TabIndex = 41;
-            this.label4.Text = "Descrição:";
+            this.label4.Text = "Lista de Atividades Planejadas:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtDescricao
+            // txtListaAtividades
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(76, 326);
-            this.txtDescricao.Multiline = true;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(230, 90);
-            this.txtDescricao.TabIndex = 40;
+            this.txtListaAtividades.Location = new System.Drawing.Point(76, 326);
+            this.txtListaAtividades.Multiline = true;
+            this.txtListaAtividades.Name = "txtListaAtividades";
+            this.txtListaAtividades.Size = new System.Drawing.Size(230, 90);
+            this.txtListaAtividades.TabIndex = 40;
             // 
             // label3
             // 
@@ -117,17 +117,17 @@
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(73, 225);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 18);
+            this.label3.Size = new System.Drawing.Size(97, 18);
             this.label3.TabIndex = 39;
-            this.label3.Text = "Código do Curso Referente:";
+            this.label3.Text = "Carga Horária:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtCodCurso
+            // txtCargaHoraria
             // 
-            this.txtCodCurso.Location = new System.Drawing.Point(76, 253);
-            this.txtCodCurso.Name = "txtCodCurso";
-            this.txtCodCurso.Size = new System.Drawing.Size(230, 20);
-            this.txtCodCurso.TabIndex = 38;
+            this.txtCargaHoraria.Location = new System.Drawing.Point(76, 253);
+            this.txtCargaHoraria.Name = "txtCargaHoraria";
+            this.txtCargaHoraria.Size = new System.Drawing.Size(230, 20);
+            this.txtCargaHoraria.TabIndex = 38;
             // 
             // label1
             // 
@@ -135,17 +135,17 @@
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(73, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 18);
+            this.label1.Size = new System.Drawing.Size(169, 18);
             this.label1.TabIndex = 37;
-            this.label1.Text = "Carga Horária:";
+            this.label1.Text = "Código do Curso Referente:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtCargaHoraria
+            // txtCodCursoRef
             // 
-            this.txtCargaHoraria.Location = new System.Drawing.Point(76, 183);
-            this.txtCargaHoraria.Name = "txtCargaHoraria";
-            this.txtCargaHoraria.Size = new System.Drawing.Size(230, 20);
-            this.txtCargaHoraria.TabIndex = 36;
+            this.txtCodCursoRef.Location = new System.Drawing.Point(77, 183);
+            this.txtCodCursoRef.Name = "txtCodCursoRef";
+            this.txtCodCursoRef.Size = new System.Drawing.Size(229, 20);
+            this.txtCodCursoRef.TabIndex = 36;
             // 
             // label2
             // 
@@ -153,17 +153,17 @@
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(73, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 18);
+            this.label2.Size = new System.Drawing.Size(117, 18);
             this.label2.TabIndex = 35;
-            this.label2.Text = "Matéria:";
+            this.label2.Text = "Matéria Referente:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtNome
+            // txtMateriaRef
             // 
-            this.txtNome.Location = new System.Drawing.Point(76, 106);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(230, 20);
-            this.txtNome.TabIndex = 34;
+            this.txtMateriaRef.Location = new System.Drawing.Point(76, 106);
+            this.txtMateriaRef.Name = "txtMateriaRef";
+            this.txtMateriaRef.Size = new System.Drawing.Size(230, 20);
+            this.txtMateriaRef.TabIndex = 34;
             // 
             // label8
             // 
@@ -196,13 +196,13 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCadastrarPlanoCurso);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.txtListaAtividades);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtCodCurso);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCargaHoraria);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCodCursoRef);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.txtMateriaRef);
             this.Controls.Add(this.panelSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -223,13 +223,13 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.TextBox txtListaAtividades;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtCodCurso;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCargaHoraria;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCodCursoRef;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtMateriaRef;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnCadastrarPlanoCurso;
     }

@@ -21,7 +21,6 @@ namespace Projeto_02
             InitializeComponent();
             // Esconde as telas de cada função para exibir somente a imagem inicial
             userControlGerenciarConteudoCurso1.Visible = false;
-            userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
             userControlGerenciarProfessor1.Visible = false;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
@@ -92,7 +91,6 @@ namespace Projeto_02
         {
             // Esconde as telas não selecionadas
             userControlGerenciarConteudoCurso1.Visible = false;
-            userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
             label8.Visible = false;
@@ -104,7 +102,6 @@ namespace Projeto_02
         {
             // Esconde as telas não selecionadas
             userControlGerenciarConteudoCurso1.Visible = false;
-            userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarProfessor1.Visible = false;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
             label8.Visible = false;
@@ -112,22 +109,9 @@ namespace Projeto_02
             userControlGerenciarPlanoCurso1.Visible = true;
         }
 
-        private void labelGerenciarPlanoAula_Click(object sender, EventArgs e)
-        {
-            // Esconde as telas não selecionadas
-            userControlGerenciarConteudoCurso1.Visible = false;
-            userControlGerenciarPlanoCurso1.Visible = false;
-            userControlGerenciarProfessor1.Visible = false;
-            userControlRelatorioFrequenciaProfessor1.Visible = false;
-            label8.Visible = false;
-            // Exibe a tela selecionada
-            userControlGerenciarPlanoAula1.Visible = true;
-        }
-
         private void labelGerenciarConteudoCurso_Click(object sender, EventArgs e)
         {
             // Esconde as telas não selecionadas
-            userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
             userControlGerenciarProfessor1.Visible = false;
             userControlRelatorioFrequenciaProfessor1.Visible = false;
@@ -140,7 +124,6 @@ namespace Projeto_02
         {
             // Esconde as telas não selecionadas
             userControlGerenciarConteudoCurso1.Visible = false;
-            userControlGerenciarPlanoAula1.Visible = false;
             userControlGerenciarPlanoCurso1.Visible = false;
             userControlGerenciarProfessor1.Visible = false;
             label8.Visible = false;

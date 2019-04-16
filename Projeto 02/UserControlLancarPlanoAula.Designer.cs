@@ -39,7 +39,7 @@
             this.btnAtualizarPlanoAula.FlatAppearance.BorderSize = 2;
             this.btnAtualizarPlanoAula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizarPlanoAula.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizarPlanoAula.Location = new System.Drawing.Point(524, 258);
+            this.btnAtualizarPlanoAula.Location = new System.Drawing.Point(423, 149);
             this.btnAtualizarPlanoAula.Name = "btnAtualizarPlanoAula";
             this.btnAtualizarPlanoAula.Size = new System.Drawing.Size(127, 68);
             this.btnAtualizarPlanoAula.TabIndex = 42;
@@ -51,7 +51,7 @@
             this.btnLancarPlanoAula.FlatAppearance.BorderSize = 2;
             this.btnLancarPlanoAula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLancarPlanoAula.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLancarPlanoAula.Location = new System.Drawing.Point(391, 258);
+            this.btnLancarPlanoAula.Location = new System.Drawing.Point(168, 149);
             this.btnLancarPlanoAula.Name = "btnLancarPlanoAula";
             this.btnLancarPlanoAula.Size = new System.Drawing.Size(127, 68);
             this.btnLancarPlanoAula.TabIndex = 41;
