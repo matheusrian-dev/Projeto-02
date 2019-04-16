@@ -97,6 +97,7 @@
             this.btnRegistrarDistribuicaoPontos.TabIndex = 33;
             this.btnRegistrarDistribuicaoPontos.Text = "Registrar Distribuição de Pontos";
             this.btnRegistrarDistribuicaoPontos.UseVisualStyleBackColor = true;
+            this.btnRegistrarDistribuicaoPontos.Click += new System.EventHandler(this.btnRegistrarDistribuicaoPontos_Click);
             // 
             // groupBox1
             // 

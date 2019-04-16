@@ -52,11 +52,13 @@
             this.txtCodTurma = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCodDistribuicaoPontos = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCadastrarConteudoCurso = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelSuperior.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSuperior
@@ -67,7 +69,7 @@
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(710, 47);
+            this.panelSuperior.Size = new System.Drawing.Size(984, 47);
             this.panelSuperior.TabIndex = 5;
             // 
             // label9
@@ -87,7 +89,7 @@
             this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Location = new System.Drawing.Point(611, 8);
+            this.btnMinimizar.Location = new System.Drawing.Point(894, 7);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
@@ -100,7 +102,7 @@
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFechar.FlatAppearance.BorderSize = 0;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Location = new System.Drawing.Point(653, 8);
+            this.btnFechar.Location = new System.Drawing.Point(936, 7);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
@@ -125,9 +127,9 @@
             this.groupBox1.Controls.Add(this.txtValorAtividade1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtCodTurma);
-            this.groupBox1.Location = new System.Drawing.Point(12, 108);
+            this.groupBox1.Location = new System.Drawing.Point(444, 109);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(694, 266);
+            this.groupBox1.Size = new System.Drawing.Size(532, 266);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             // 
@@ -135,7 +137,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(385, 195);
+            this.label10.Location = new System.Drawing.Point(280, 195);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(131, 18);
             this.label10.TabIndex = 32;
@@ -144,7 +146,7 @@
             // 
             // txtValorProvaFinal
             // 
-            this.txtValorProvaFinal.Location = new System.Drawing.Point(388, 223);
+            this.txtValorProvaFinal.Location = new System.Drawing.Point(283, 223);
             this.txtValorProvaFinal.Name = "txtValorProvaFinal";
             this.txtValorProvaFinal.Size = new System.Drawing.Size(230, 20);
             this.txtValorProvaFinal.TabIndex = 31;
@@ -171,7 +173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(385, 137);
+            this.label7.Location = new System.Drawing.Point(280, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(141, 18);
             this.label7.TabIndex = 28;
@@ -180,7 +182,7 @@
             // 
             // txtValorProvaInicial
             // 
-            this.txtValorProvaInicial.Location = new System.Drawing.Point(388, 165);
+            this.txtValorProvaInicial.Location = new System.Drawing.Point(283, 165);
             this.txtValorProvaInicial.Name = "txtValorProvaInicial";
             this.txtValorProvaInicial.Size = new System.Drawing.Size(230, 20);
             this.txtValorProvaInicial.TabIndex = 27;
@@ -189,7 +191,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(385, 79);
+            this.label6.Location = new System.Drawing.Point(280, 79);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(141, 18);
             this.label6.TabIndex = 26;
@@ -198,7 +200,7 @@
             // 
             // txtValorAtividade4
             // 
-            this.txtValorAtividade4.Location = new System.Drawing.Point(388, 107);
+            this.txtValorAtividade4.Location = new System.Drawing.Point(283, 107);
             this.txtValorAtividade4.Name = "txtValorAtividade4";
             this.txtValorAtividade4.Size = new System.Drawing.Size(230, 20);
             this.txtValorAtividade4.TabIndex = 25;
@@ -207,7 +209,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(385, 21);
+            this.label5.Location = new System.Drawing.Point(280, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 18);
             this.label5.TabIndex = 24;
@@ -216,7 +218,7 @@
             // 
             // txtNomeResponsavel
             // 
-            this.txtNomeResponsavel.Location = new System.Drawing.Point(388, 49);
+            this.txtNomeResponsavel.Location = new System.Drawing.Point(283, 49);
             this.txtNomeResponsavel.Name = "txtNomeResponsavel";
             this.txtNomeResponsavel.Size = new System.Drawing.Size(230, 20);
             this.txtNomeResponsavel.TabIndex = 23;
@@ -293,50 +295,61 @@
             this.txtCodDistribuicaoPontos.Size = new System.Drawing.Size(230, 20);
             this.txtCodDistribuicaoPontos.TabIndex = 33;
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(142)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.button1.Location = new System.Drawing.Point(444, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 23);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(142)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnBuscar.Location = new System.Drawing.Point(444, 80);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(70, 23);
+            this.btnBuscar.TabIndex = 35;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnCadastrarConteudoCurso
             // 
             this.btnCadastrarConteudoCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrarConteudoCurso.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarConteudoCurso.Location = new System.Drawing.Point(256, 380);
+            this.btnCadastrarConteudoCurso.Location = new System.Drawing.Point(618, 381);
             this.btnCadastrarConteudoCurso.Name = "btnCadastrarConteudoCurso";
             this.btnCadastrarConteudoCurso.Size = new System.Drawing.Size(199, 56);
             this.btnCadastrarConteudoCurso.TabIndex = 37;
             this.btnCadastrarConteudoCurso.Text = "Atualizar Distribuição de Pontos";
             this.btnCadastrarConteudoCurso.UseVisualStyleBackColor = true;
+            this.btnCadastrarConteudoCurso.Click += new System.EventHandler(this.btnCadastrarConteudoCurso_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(650, 397);
+            this.label11.Location = new System.Drawing.Point(928, 397);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 38);
             this.label11.TabIndex = 38;
             this.label11.Text = "EF";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 114);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(417, 318);
+            this.dataGridView1.TabIndex = 39;
             // 
             // FormEditarDistribuicaoPontos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(710, 444);
+            this.ClientSize = new System.Drawing.Size(984, 444);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnCadastrarConteudoCurso);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCodDistribuicaoPontos);
@@ -350,6 +363,7 @@
             this.panelSuperior.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,7 +376,7 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtCodDistribuicaoPontos;
         private System.Windows.Forms.Label label10;
@@ -383,5 +397,6 @@
         private System.Windows.Forms.TextBox txtCodTurma;
         private System.Windows.Forms.Button btnCadastrarConteudoCurso;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

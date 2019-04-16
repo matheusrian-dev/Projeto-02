@@ -46,7 +46,8 @@
             this.txtValorAtividade1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodAluno = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCodDistribuicao = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,9 +100,9 @@
             this.groupBox1.Controls.Add(this.txtValorAtividade2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtValorAtividade1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 84);
+            this.groupBox1.Location = new System.Drawing.Point(16, 100);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(678, 209);
+            this.groupBox1.Size = new System.Drawing.Size(678, 193);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             // 
@@ -217,7 +218,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(110, 58);
+            this.label2.Location = new System.Drawing.Point(50, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 18);
             this.label2.TabIndex = 44;
@@ -226,29 +227,36 @@
             // 
             // txtCodAluno
             // 
-            this.txtCodAluno.Location = new System.Drawing.Point(227, 58);
+            this.txtCodAluno.Location = new System.Drawing.Point(53, 74);
             this.txtCodAluno.Name = "txtCodAluno";
             this.txtCodAluno.Size = new System.Drawing.Size(230, 20);
             this.txtCodAluno.TabIndex = 43;
             // 
-            // btnBuscar
+            // label5
             // 
-            this.btnBuscar.FlatAppearance.BorderSize = 2;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(463, 51);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(88, 32);
-            this.btnBuscar.TabIndex = 45;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(420, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 18);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "Código da Distribuição de Pontos:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtCodDistribuicao
+            // 
+            this.txtCodDistribuicao.Location = new System.Drawing.Point(423, 74);
+            this.txtCodDistribuicao.Name = "txtCodDistribuicao";
+            this.txtCodDistribuicao.Size = new System.Drawing.Size(230, 20);
+            this.txtCodDistribuicao.TabIndex = 45;
             // 
             // UserControlLancarNota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtCodDistribuicao);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodAluno);
             this.Controls.Add(this.btnLancarNotaAluno);
@@ -283,6 +291,7 @@
         private System.Windows.Forms.TextBox txtValorAtividade1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodAluno;
-        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCodDistribuicao;
     }
 }

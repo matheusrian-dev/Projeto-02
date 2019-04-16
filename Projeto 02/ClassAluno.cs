@@ -16,7 +16,7 @@ namespace Projeto_02
         public string NomeResponsavel { get; set; }
         public string TelefoneContato { get; set; }
         public string Endereco { get; set; }
-        public string Turma_CodTurma { get; set; }
+        public int Turma_CodTurma { get; set; }
         public string Sexo { get; set; }
         public string GrauEscolaridade { get; set; }
 
@@ -124,6 +124,14 @@ namespace Projeto_02
                 DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Aluno"));
                 bd.Desconectar();
                 return dt;
+        }
+
+        public DataTable MostrarAlunosTurma()
+        {
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Aluno WHERE Turma_CodTurma = "+Turma_CodTurma+""));
+            bd.Desconectar();
+            return dt;
         }
     }
 }

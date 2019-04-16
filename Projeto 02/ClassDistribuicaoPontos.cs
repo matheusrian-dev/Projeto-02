@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,7 +44,7 @@ namespace Projeto_02
             }
         }
 
-        public bool EditarDistribuicao(int codDistribuicaoPontos)
+        public bool EditarDistribuicao()
         {
             try
             {
@@ -53,7 +54,7 @@ namespace Projeto_02
                 //Executar o Insert
                 bd.ExecutarComandosSql(String.Format("Update DistribuicaoPontos SET " +
                     " nomeInstrutor = '" + NomeInstrutor + "', valorAtividade01 = " + ValorAtividade01 + ", valorAtividade02 = " + ValorAtividade02 + ", valorAtividade03 = " + ValorAtividade03 + ", valorAtividade04 = " + ValorAtividade04 + ", valorProvaInicial = " + ValorProvaInicial + ", valorProvaFinal = " + ValorProvaFinal + ", Turma_codTurma = " + Turma_CodTurma +
-                    " WHERE codDistribuicaoPontos LIKE " + codDistribuicaoPontos));
+                    " WHERE codDistribuicaoPontos LIKE " + CodDistribuicaoPontos));
 
                 //Desconectar
                 bd.Desconectar();
@@ -67,24 +68,32 @@ namespace Projeto_02
             }
         }
 
-        public bool ExcluirDistribuicao(int codDistribuicaoPontos)
+        //public bool ExcluirDistribuicao(int codDistribuicaoPontos)
+        //{
+        //    try
+        //    {
+        //        bd.Conectar();
+        //        bd.ExecutarComandosSql(String.Format("DELETE FROM DistribuicaoPontos" +
+        //            " WHERE codDistribuicaoPontos = " + codDistribuicaoPontos + ""));
+
+
+
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception(ex.Message +
+        //        " Erro ao excluir a Distribuicao");
+
+        //    }
+        //}
+
+        public DataTable MostrarDistribuicao()
         {
-            try
-            {
-                bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("DELETE FROM DistribuicaoPontos" +
-                    " WHERE codDistribuicaoPontos = " + codDistribuicaoPontos + ""));
-
-
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message +
-                " Erro ao excluir a Distribuicao");
-
-            }
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM DistribuicaoPontos WHERE codDistribuicaoPontos = "+ CodDistribuicaoPontos +""));
+            bd.Desconectar();
+            return dt;
         }
     }
 }

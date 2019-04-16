@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Projeto_02
 {
@@ -20,51 +22,56 @@ namespace Projeto_02
 
         ClassAcessoBD bd = new ClassAcessoBD();
 
-        public bool InserirNotas()
+        public void InserirNotas()
         {
-            try
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Nota WHERE Aluno_codAluno = "+Aluno_CodAluno+" AND DistribuicaoPontos_codDistribuicaoPontos = "+DistribuicaoPontos_CodDistribuicaoPontos+""));
+            if (dt.Rows.Count == 0)
             {
-                bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Nota VALUES '"+ NotaAtividade01 +"','"+ NotaAtividade02 +"','"+ NotaAtividade03 +"', "+NotaAtividade04+", "+NotaProvaInicial+", "+ NotaProvaFinal +", "+ Aluno_CodAluno +", "+DistribuicaoPontos_CodDistribuicaoPontos+""));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Nota VALUES " + NotaAtividade01 + "," + NotaAtividade02 + "," + NotaAtividade03 + ", " + NotaAtividade04 + ", " + NotaProvaInicial + ", " + NotaProvaFinal + ", " + Aluno_CodAluno + ", " + DistribuicaoPontos_CodDistribuicaoPontos + ""));
+                MessageBox.Show("Nota Lançada com Sucesso!");
                 bd.Desconectar();
-                return true;
             }
-            catch
+            else
             {
-                return false;
+                bd.ExecutarComandosSql(String.Format(" UPDATE Nota SET " + " notaAtividade01 = " + NotaAtividade01 + ",  notaAtividade02 = " + NotaAtividade02 + ", notaAtividade03 = " + NotaAtividade03 + ", notaAtividade04 = " + NotaAtividade04 + ", notaProvaInicial = " + NotaProvaInicial + ",  notaProvaFinal = " + NotaProvaFinal + " Aluno_codAluno = " + Aluno_CodAluno + " WHERE Aluno_CodAluno = " + Aluno_CodAluno + " AND Distribuicao_codDistribuicao = " + DistribuicaoPontos_CodDistribuicaoPontos));
+                MessageBox.Show("Nota Atualizada com Sucesso!");
+                bd.Desconectar();
             }
+                
+                
         }
 
 
-        public bool EditarNotas()
-        {
-            try
-            {
-                bd.Conectar();
-                bd.ExecutarComandosSql(String.Format(" UPDATE Nota SET " + " Aluno_CodAluno = '" + Aluno_CodAluno + "', notaAtividade01 = '" + NotaAtividade01 + ",  notaAtividade02 = '" + NotaAtividade02 + ", notaAtividade03 = '" + NotaAtividade03 + ", notaAtividade04 = '" + NotaAtividade04 + ", notaProvaInicial = '" + NotaProvaInicial + ",  notaProvaFinal = '" + NotaProvaFinal + " Aluno_codAluno = '" + Aluno_CodAluno + ", Distribuicao_codDistribuicao = '" + DistribuicaoPontos_CodDistribuicaoPontos + "   WHERE codNota LIKE " + CodNota));
-                bd.Desconectar();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+        //public bool EditarNotas()
+        //{
+        //    try
+        //    {
+        //        bd.Conectar();
+        //        bd.ExecutarComandosSql(String.Format(" UPDATE Nota SET " + " Aluno_CodAluno = '" + Aluno_CodAluno + "', notaAtividade01 = '" + NotaAtividade01 + ",  notaAtividade02 = '" + NotaAtividade02 + ", notaAtividade03 = '" + NotaAtividade03 + ", notaAtividade04 = '" + NotaAtividade04 + ", notaProvaInicial = '" + NotaProvaInicial + ",  notaProvaFinal = '" + NotaProvaFinal + " Aluno_codAluno = '" + Aluno_CodAluno + ", Distribuicao_codDistribuicao = '" + DistribuicaoPontos_CodDistribuicaoPontos + "   WHERE codNota LIKE " + CodNota));
+        //        bd.Desconectar();
+        //        return true;
+        //    }
+        //    catch
+        //    {
+        //        return false;
+        //    }
+        //}
 
-        public bool ExcluirNota()
-        {
-            try
-            {
-                bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("DELETE FROM Nota WHERE  CodNota = " + CodNota + ""));
-                bd.Desconectar();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+        //public bool ExcluirNota()
+        //{
+        //    try
+        //    {
+        //        bd.Conectar();
+        //        bd.ExecutarComandosSql(String.Format("DELETE FROM Nota WHERE  CodNota = " + CodNota + ""));
+        //        bd.Desconectar();
+        //        return true;
+        //    }
+        //    catch
+        //    {
+        //        return false;
+        //    }
+        //}
 
 
         public bool GerarBoletim(int codAluno)

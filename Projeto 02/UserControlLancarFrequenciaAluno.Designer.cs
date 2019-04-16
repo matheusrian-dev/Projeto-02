@@ -38,8 +38,9 @@
             this.txtCodAluno = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboStatus = new System.Windows.Forms.ComboBox();
             this.dtpDataHoje = new System.Windows.Forms.DateTimePicker();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@
             this.btnLancarFrequenciaAluno.TabIndex = 37;
             this.btnLancarFrequenciaAluno.Text = "Lançar Frequência do Aluno";
             this.btnLancarFrequenciaAluno.UseVisualStyleBackColor = true;
+            this.btnLancarFrequenciaAluno.Click += new System.EventHandler(this.btnLancarFrequenciaAluno_Click);
             // 
             // label1
             // 
@@ -143,17 +145,17 @@
             this.label5.Text = "Data de Hoje:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // cboStatus
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboStatus.FormattingEnabled = true;
+            this.cboStatus.Items.AddRange(new object[] {
             "Presente",
             "Ausente"});
-            this.comboBox1.Location = new System.Drawing.Point(391, 208);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(230, 21);
-            this.comboBox1.TabIndex = 48;
+            this.cboStatus.Location = new System.Drawing.Point(391, 208);
+            this.cboStatus.Name = "cboStatus";
+            this.cboStatus.Size = new System.Drawing.Size(230, 21);
+            this.cboStatus.TabIndex = 48;
             // 
             // dtpDataHoje
             // 
@@ -163,13 +165,28 @@
             this.dtpDataHoje.Size = new System.Drawing.Size(230, 20);
             this.dtpDataHoje.TabIndex = 49;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(142)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnBuscar.Location = new System.Drawing.Point(627, 99);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(70, 23);
+            this.btnBuscar.TabIndex = 50;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // UserControlLancarFrequenciaAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dtpDataHoje);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboStatus);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -199,7 +216,8 @@
         private System.Windows.Forms.TextBox txtCodAluno;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboStatus;
         private System.Windows.Forms.DateTimePicker dtpDataHoje;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

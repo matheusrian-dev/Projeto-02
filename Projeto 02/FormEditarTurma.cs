@@ -33,6 +33,7 @@ namespace Projeto_02
             turma.Curso_CodCurso = int.Parse(txtCodCurso.Text);
             turma.Nome = txtNome.Text;
             turma.NomeInstrutor = txtNomeInstrutor.Text;
+            turma.CodTurma = int.Parse(txtCodTurma.Text);
             turma.EditarTurma();
         }
 
@@ -41,6 +42,7 @@ namespace Projeto_02
             turma.Curso_CodCurso = int.Parse(txtCodCurso.Text);
             turma.Nome = txtNome.Text;
             turma.NomeInstrutor = txtNomeInstrutor.Text;
+            turma.CodTurma = int.Parse(txtCodTurma.Text);
             DialogResult result = MessageBox.Show("Tem certeza que quer excluir esse cadastro?", "Excluir", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result.Equals(DialogResult.OK))
             {
