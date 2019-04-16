@@ -57,8 +57,8 @@ namespace Projeto_02
         public DataTable RetFuncionario(string email, string senha)
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * " +
-                " FROM Funcionario WHERE email LIKE '%{0}%' AND senha LIKE '%{1}%'", email, senha));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT nomeFuncionario, cargoFuncionario " +
+                " FROM Funcionario WHERE emailFuncionario LIKE '%{0}%' AND senhaFuncionario LIKE '%{1}%'", email, senha));
             bd.Desconectar();
 
             return dt;
@@ -71,14 +71,13 @@ namespace Projeto_02
             if (dt.Rows.Count > 0)
             {
                 string nome = dt.Rows[0]["nomeFuncionario"].ToString();
-                string cargo = dt.Rows[0]["cargo"].ToString();
+                string cargo = dt.Rows[0]["cargoFuncionario"].ToString();
                 Nome = nome;
                 Cargo = cargo;
                 return true;
             }
             else
             {
-                MessageBox.Show("Email ou Senha inválido.");
                 return false;
             }
         }
@@ -92,69 +91,41 @@ namespace Projeto_02
             return dt;
         }
 
-        public bool CadastrarFuncionario()
+        public void CadastrarFuncionario()
         {
-            try
-            {
                 bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionarios VALUES '{0}','{1}','{2}','{3}','{4}','{5}','{6}'", Cpf, Nome, Email, Senha, Cargo, Telefone, Sexo));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionario(cpf, nomeFuncionario, telefoneFuncionario, emailFuncionario, cargoFuncionario, senhaFuncionario, sexoFuncionario)" +
+                    "VALUES('"+Cpf+"', '"+Nome+ "', '" + Telefone + "', '" + Email+ "', '" + Cargo + "', '" + Senha+"', '"+Sexo+"')"));
                 bd.Desconectar();
                 MessageBox.Show("Funcionario Cadastrado com Sucesso!");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
         }
 
-        public bool CadastrarProfessor()
+        public void CadastrarProfessor()
         {
-            try
-            {
                 bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionarios VALUES '{0}','{1}','{2}','{3}','Professor(a)','{4}','{5}'", Cpf, Nome, Email, Senha, Telefone, Sexo));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionario VALUES ('{0}','{1}','{2}','{3}','Professor(a)','{4}','{5}')", Cpf, Nome, Telefone, Email, Senha, Sexo));
                 bd.Desconectar();
                 MessageBox.Show("Professor Cadastrado com Sucesso!");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            
         }
 
 
-        public bool EditarFuncionario()
+        public void EditarFuncionario()
         {
-            try
-            {
                 bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("UPDATE Funcionario SET Nome = '" + Nome + "', Email = '" + Email + "', Senha = '" + Senha + "', Cargo = '" + Cargo + "', Telefone = '" + Telefone + "', Sexo = '" + Sexo + "', WHERE Cpf LIKE '" + Cpf + "'"));
+                bd.ExecutarComandosSql(String.Format("UPDATE Funcionario SET nomeFuncionario = '" + Nome + "', emailFuncionario = '" + Email + "', senhaFuncionario = '" + Senha + "', cargoFuncionario = '" + Cargo + "', telefoneFuncionario = '" + Telefone + "', sexoFuncionario = '" + Sexo + "' WHERE cpf LIKE '" + Cpf + "'"));
                 bd.Desconectar();
                 MessageBox.Show("Funcionario Atualizado com Sucesso!");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            
         }
 
-        public bool ExcluirFuncionario()
+        public void ExcluirFuncionario()
         {
-            try
-            {
                 bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("DELETE FROM Funcionario WHERE CPF =" + Cpf));
+                bd.ExecutarComandosSql(String.Format("DELETE FROM Funcionario WHERE cpf = '" + Cpf+ "'"));
                 bd.Desconectar();
                 MessageBox.Show("Funcionario Excluido com Sucesso!");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            
         }
 
         public DataTable MostrarFuncionarios()
@@ -168,7 +139,7 @@ namespace Projeto_02
         public DataTable MostrarProfs()
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Funcionario WHERE cargo LIKE 'Professor(a)'"));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Funcionario WHERE cargoFuncionario LIKE 'Professor(a)'"));
             bd.Desconectar();
             return dt;
         }

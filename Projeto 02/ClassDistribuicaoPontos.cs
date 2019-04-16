@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Projeto_02
 {
@@ -29,11 +30,12 @@ namespace Projeto_02
                 bd.Conectar();
 
                 //Executar o Insert
-                bd.ExecutarComandosSql(String.Format("INSERT INTO DistribuicaoPontos(codDistribuicaoPontos, nomeInstrutor, valorAtividade01, valorAtividade02, valorAtividade03, valorAtividade04, valorProvaInicial, valorProvaFinal, Turma_CodTurma)" +
-                    " VALUES (" + CodDistribuicaoPontos + ", '" + NomeInstrutor + "', " + ValorAtividade01 + ", '" + ValorAtividade02 + "', " + ValorAtividade03 + ", " + ValorAtividade04 + ", " + ValorProvaInicial + ", " + ValorProvaFinal + ", " + Turma_CodTurma + ")"));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO DistribuicaoPontos(nomeInstrutor, valorAtividade01, valorAtividade02, valorAtividade03, valorAtividade04, valorProvaInicial, valorProvaFinal, Turma_CodTurma)" +
+                    " VALUES ('" + NomeInstrutor + "', " + ValorAtividade01 + ", '" + ValorAtividade02 + "', " + ValorAtividade03 + ", " + ValorAtividade04 + ", " + ValorProvaInicial + ", " + ValorProvaFinal + ", " + Turma_CodTurma + ")"));
 
                 //Desconectar
                 bd.Desconectar();
+                MessageBox.Show("Distribuição Criada com Sucesso!");
                 return true;
             }
             catch (Exception ex)
@@ -58,6 +60,8 @@ namespace Projeto_02
 
                 //Desconectar
                 bd.Desconectar();
+
+                MessageBox.Show("Distribuição Atualizada com Sucesso!");
                 return true;
             }
             catch (Exception ex)

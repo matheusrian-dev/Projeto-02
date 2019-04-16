@@ -39,14 +39,10 @@ namespace Projeto_02
 
         private void btnExcluirTurma_Click(object sender, EventArgs e)
         {
-            turma.Curso_CodCurso = int.Parse(txtCodCurso.Text);
-            turma.Nome = txtNome.Text;
-            turma.NomeInstrutor = txtNomeInstrutor.Text;
-            turma.CodTurma = int.Parse(txtCodTurma.Text);
             DialogResult result = MessageBox.Show("Tem certeza que quer excluir esse cadastro?", "Excluir", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result.Equals(DialogResult.OK))
             {
-                turma.ExcluirTurma();
+                turma.ExcluirTurma(int.Parse(txtCodTurma.Text));
             }
             else
             {

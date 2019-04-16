@@ -42,13 +42,6 @@ namespace Projeto_02
 
         private void btnExcluirAluno_Click(object sender, EventArgs e)
         {
-            aluno.Nome = txtNome.Text;
-            aluno.DataNascimento = DateTime.Parse(dtpDataNascimento.Text);
-            aluno.NomeResponsavel = txtNomeResponsavel.Text;
-            aluno.TelefoneContato = mskTelefone.Text;
-            aluno.Endereco = txtEndereco.Text;
-            aluno.Sexo = cboSexo.Text;
-            aluno.GrauEscolaridade = txtGrauEscolaridade.Text;
             DialogResult result = MessageBox.Show("Tem certeza que quer excluir esse cadastro?", "Excluir", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result.Equals(DialogResult.OK))
             {

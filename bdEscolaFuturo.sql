@@ -5,7 +5,7 @@ USE bdEscolaFuturo
 GO
 
 CREATE TABLE Funcionario(
- cpf			      VARCHAR(15) PRIMARY KEY NOT NULL,
+ cpf			      VARCHAR(20) PRIMARY KEY NOT NULL,
  nomeFuncionario      VARCHAR(90) NOT NULL,
  telefoneFuncionario  VARCHAR(20) NOT NULL,
  emailFuncionario	  VARCHAR(70) NOT NULL,
@@ -83,8 +83,8 @@ CREATE TABLE FrequenciaAluno(
 );
 
 INSERT INTO Funcionario(cpf, nomeFuncionario, telefoneFuncionario, emailFuncionario, cargoFuncionario, senhaFuncionario, sexoFuncionario) 
-	VALUES('222.222.222-22', 'Diretor', '(31) 99726-6405', 'diretor@gmail.com', 'diretor', '123', 'Masculino')
---SELECT * FROM Funcionario
+	VALUES('222.222.222-22', 'Diretor', '(31) 99726-6405', 'diretor@gmail.com', 'Diretor(a)', '123', 'Masculino')
+--SELECT * FROM Nota
 --CREATE TABLE FrequenciaFuncionario(
 -- codFrequenciaFuncionario			INT PRIMARY KEY IDENTITY(1,1),
 -- Funcionario_cpf					INT			NOT NULL,

@@ -31,7 +31,7 @@ namespace Projeto_02
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             distribuicao.CodDistribuicaoPontos = int.Parse(txtCodDistribuicaoPontos.Text);
-            distribuicao.MostrarDistribuicao();
+            dataGridView1.DataSource = distribuicao.MostrarDistribuicao();
         }
 
         private void btnCadastrarConteudoCurso_Click(object sender, EventArgs e)

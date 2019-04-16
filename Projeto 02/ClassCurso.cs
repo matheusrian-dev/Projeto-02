@@ -86,7 +86,7 @@ namespace Projeto_02
         public DataTable MostrarCursos()
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Cursos"));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Curso"));
             bd.Desconectar();
             return dt;
         }

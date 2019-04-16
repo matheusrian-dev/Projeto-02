@@ -34,7 +34,6 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
@@ -49,6 +48,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnCadastrarFuncionario = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,14 +107,6 @@
             this.txtNome.Size = new System.Drawing.Size(230, 20);
             this.txtNome.TabIndex = 2;
             // 
-            // mskCpf
-            // 
-            this.mskCpf.Location = new System.Drawing.Point(56, 90);
-            this.mskCpf.Mask = "999.999.999-99";
-            this.mskCpf.Name = "mskCpf";
-            this.mskCpf.Size = new System.Drawing.Size(230, 20);
-            this.mskCpf.TabIndex = 3;
-            // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(56, 206);
@@ -154,6 +146,7 @@
             // 
             // cboSexo
             // 
+            this.cboSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSexo.FormattingEnabled = true;
             this.cboSexo.Items.AddRange(new object[] {
             "Masculino",
@@ -264,6 +257,14 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "EF";
             // 
+            // mskCpf
+            // 
+            this.mskCpf.Location = new System.Drawing.Point(56, 90);
+            this.mskCpf.Mask = "999.999.999-99";
+            this.mskCpf.Name = "mskCpf";
+            this.mskCpf.Size = new System.Drawing.Size(230, 20);
+            this.mskCpf.TabIndex = 3;
+            // 
             // FormCadastrarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,7 +306,6 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.MaskedTextBox mskCpf;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.MaskedTextBox mskTelefone;
@@ -321,5 +321,6 @@
         private System.Windows.Forms.Button btnCadastrarFuncionario;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MaskedTextBox mskCpf;
     }
 }

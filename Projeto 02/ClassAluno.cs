@@ -58,7 +58,7 @@ namespace Projeto_02
 
                 //Executar o Insert
                 bd.ExecutarComandosSql(String.Format("Update Aluno SET " +
-                    " nomeAluno = '" + Nome + "', dataNascAluno = '" + dataNascAlunoShow + "', nomeResponsavel = '" + NomeResponsavel + "', telefoneAluno = '" + TelefoneContato + "', sexoAluno = '" + Sexo + "', enderecoAluno = '" + Endereco + "', serie = '" + GrauEscolaridade + "', Turma_codTurma = " + Turma_CodTurma + "" +
+                    " nomeAluno = '" + Nome + "', dataNascAluno = '" + dataNascAlunoShow + "', nomeResponsavel = '" + NomeResponsavel + "', telefoneAluno = '" + TelefoneContato + "', sexoAluno = '" + Sexo + "', enderecoAluno = '" + Endereco + "', serie = '" + GrauEscolaridade + "'" +
                     " WHERE codAluno LIKE " + codAluno));
 
                 //Desconectar
@@ -99,37 +99,34 @@ namespace Projeto_02
             }
         }
 
-        public bool ExcluirAluno(int codAluno)
+        public void ExcluirAluno(int codAluno)
         {
-            try
-            {
-                bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("DELETE FROM Aluno" +
-                    " WHERE codAluno = " + codAluno + ""));
-                
-                MessageBox.Show("Aluno Excluido com Sucesso!");
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message +
-                " Erro ao excluir o Aluno");
+            bd.Conectar();
+            bd.ExecutarComandosSql(String.Format("DELETE FROM Nota WHERE Aluno_codAluno = " + codAluno));
+            bd.Desconectar();
+            bd.Conectar();
+            bd.ExecutarComandosSql(String.Format("DELETE FROM FrequenciaAluno WHERE Aluno_codAluno = " + codAluno));
+            bd.Desconectar();
+            bd.Conectar();
+            bd.ExecutarComandosSql(String.Format("DELETE FROM Aluno" +
+                " WHERE codAluno = " + codAluno + ""));
+            bd.Desconectar();
+            MessageBox.Show("Aluno Excluido com Sucesso!");
 
-            }
         }
 
         public DataTable MostrarAlunos()
         {
-                bd.Conectar();
-                DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Aluno"));
-                bd.Desconectar();
-                return dt;
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Aluno"));
+            bd.Desconectar();
+            return dt;
         }
 
         public DataTable MostrarAlunosTurma()
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Aluno WHERE Turma_CodTurma = "+Turma_CodTurma+""));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Aluno WHERE Turma_CodTurma = " + Turma_CodTurma + ""));
             bd.Desconectar();
             return dt;
         }

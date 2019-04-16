@@ -21,16 +21,16 @@ namespace Projeto_02
         {
             bd.Conectar();
             string dataAulaHoje = DataAula.ToString("yyyy-MM-dd");
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Frequencia WHERE Aluno_codAluno = " + CodAluno + " AND dataAula = '" + dataAulaHoje + "'"));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM FrequenciaAluno WHERE Aluno_codAluno = " + CodAluno + " AND dataAula = '" + dataAulaHoje + "'"));
             if (dt.Rows.Count == 0)
             {
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Frequencia VALUES " + CodAluno + ",'" + dataAulaHoje + "', '" + StatusFrequencia + "'"));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO FrequenciaAluno VALUES (" + CodAluno + ",'" + dataAulaHoje + "', '" + StatusFrequencia + "')"));
                 MessageBox.Show("Frequência Lançada com Sucesso!");
                 bd.Desconectar();
             }
             else
             {
-                bd.ExecutarComandosSql(String.Format(" UPDATE Nota SET statusFrequencia" + StatusFrequencia + "' WHERE Aluno_codAluno = "+CodAluno+" AND dataAula = '"+dataAulaHoje+"'"));
+                bd.ExecutarComandosSql(String.Format(" UPDATE FrequenciaAluno SET statusFrequencia = '" + StatusFrequencia + "' WHERE Aluno_codAluno = "+CodAluno+" AND dataAula = '"+dataAulaHoje+"'"));
                 MessageBox.Show("Frequencia Atualizada com Sucesso!");
                 bd.Desconectar();
             }

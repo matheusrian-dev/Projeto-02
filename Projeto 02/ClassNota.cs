@@ -28,13 +28,13 @@ namespace Projeto_02
             DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Nota WHERE Aluno_codAluno = "+Aluno_CodAluno+" AND DistribuicaoPontos_codDistribuicaoPontos = "+DistribuicaoPontos_CodDistribuicaoPontos+""));
             if (dt.Rows.Count == 0)
             {
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Nota VALUES " + NotaAtividade01 + "," + NotaAtividade02 + "," + NotaAtividade03 + ", " + NotaAtividade04 + ", " + NotaProvaInicial + ", " + NotaProvaFinal + ", " + Aluno_CodAluno + ", " + DistribuicaoPontos_CodDistribuicaoPontos + ""));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Nota VALUES(" + NotaAtividade01 + ", " + NotaAtividade02 + "," + NotaAtividade03 + ", " + NotaAtividade04 + ", " + NotaProvaInicial + ", " + NotaProvaFinal + ", " + Aluno_CodAluno + ", " + DistribuicaoPontos_CodDistribuicaoPontos + ")"));
                 MessageBox.Show("Nota Lançada com Sucesso!");
                 bd.Desconectar();
             }
             else
             {
-                bd.ExecutarComandosSql(String.Format(" UPDATE Nota SET " + " notaAtividade01 = " + NotaAtividade01 + ",  notaAtividade02 = " + NotaAtividade02 + ", notaAtividade03 = " + NotaAtividade03 + ", notaAtividade04 = " + NotaAtividade04 + ", notaProvaInicial = " + NotaProvaInicial + ",  notaProvaFinal = " + NotaProvaFinal + " Aluno_codAluno = " + Aluno_CodAluno + " WHERE Aluno_CodAluno = " + Aluno_CodAluno + " AND Distribuicao_codDistribuicao = " + DistribuicaoPontos_CodDistribuicaoPontos));
+                bd.ExecutarComandosSql(String.Format(" UPDATE Nota SET " + " notaAtividade01 = " + NotaAtividade01 + ",  notaAtividade02 = " + NotaAtividade02 + ", notaAtividade03 = " + NotaAtividade03 + ", notaAtividade04 = " + NotaAtividade04 + ", notaProvaInicial = " + NotaProvaInicial + ",  notaProvaFinal = " + NotaProvaFinal + ", Aluno_codAluno = " + Aluno_CodAluno + " WHERE Aluno_CodAluno = " + Aluno_CodAluno + " AND DistribuicaoPontos_codDistribuicaoPontos = " + DistribuicaoPontos_CodDistribuicaoPontos));
                 MessageBox.Show("Nota Atualizada com Sucesso!");
                 bd.Desconectar();
             }

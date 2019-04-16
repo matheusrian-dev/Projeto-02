@@ -17,53 +17,32 @@ namespace Projeto_02
 
         ClassAcessoBD bd = new ClassAcessoBD();
 
-        public bool InserirTurmas()
+        public void InserirTurmas()
         {
-            try
-            {
                 bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("INSERT INTO Turma VALUES '"+Nome+"', "+Curso_CodCurso+",'"+NomeInstrutor+"'"));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Turma(nomeTurma, nomeInstrutor, Curso_codCurso) VALUES ('"+Nome+"','"+NomeInstrutor+ "', " + Curso_CodCurso + ")"));
                 bd.Desconectar();
                 MessageBox.Show("Turma Cadastrada com Sucesso!");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            
         }
 
 
-        public bool EditarTurma()
+        public void EditarTurma()
         {
-            try
-            {
                 bd.Conectar();
-                bd.ExecutarComandosSql(String.Format(" UPDATE Turma SET " + " Nome = '" + Nome + "', Curso_codCurso = "+ Curso_CodCurso + ", nomeInstrutor = '" + NomeInstrutor + " WHERE codTurma LIKE " + CodTurma));
+                bd.ExecutarComandosSql(String.Format(" UPDATE Turma SET " + " nomeTurma = '" + Nome + "', nomeInstrutor = '" + NomeInstrutor + "', Curso_codCurso = " + Curso_CodCurso + " WHERE codTurma LIKE " + CodTurma));
                 bd.Desconectar();
                 MessageBox.Show("Turma Atualizada com Sucesso!");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            
         }
 
-        public bool ExcluirTurma()
+        public void ExcluirTurma(int codTurma)
         {
-            try
-            {
                 bd.Conectar();
-                bd.ExecutarComandosSql(String.Format("DELETE FROM Turma WHERE  CodTurma = " + CodTurma + ""));
+                bd.ExecutarComandosSql(String.Format("DELETE FROM Turma WHERE codTurma = " + codTurma + ""));
                 bd.Desconectar();
                 MessageBox.Show("Turma Excluida com Sucesso!");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            
         }
 
         public DataTable MostrarTurma()

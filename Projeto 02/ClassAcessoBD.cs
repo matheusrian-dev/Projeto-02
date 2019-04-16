@@ -27,7 +27,8 @@ namespace Projeto_02
 
         //3º Passo: Definindo os parâmetros para 
         //criar string de conexão 
-        private string server = @"(localdb)\MSSQLLocalDB";// nome do servidor sqlServer
+        //private string server = @"(localdb)\MSSQLLocalDB";// nome do servidor sqlServer
+        private string server = @"TI20-PC";// nome do servidor sqlServer
         private string database = "bdEscolaFuturo"; //nome do database
         //private string server = @"CASA\SQLEXPRESS";
         //Método: CONECTAR

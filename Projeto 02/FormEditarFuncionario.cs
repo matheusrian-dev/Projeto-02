@@ -43,12 +43,12 @@ namespace Projeto_02
         private void btnExcluirFuncionario_Click(object sender, EventArgs e)
         {
             funcionario.Cpf = mskCpf.Text;
-            funcionario.Nome = txtNome.Text;
-            funcionario.Telefone = mskTelefone.Text;
-            funcionario.Email = txtEmail.Text;
-            funcionario.Senha = txtSenha.Text;
-            funcionario.Sexo = cboSexo.Text;
-            funcionario.Cargo = cboCargo.Text;
+            //funcionario.Nome = txtNome.Text;
+            //funcionario.Telefone = mskTelefone.Text;
+            //funcionario.Email = txtEmail.Text;
+            //funcionario.Senha = txtSenha.Text;
+            //funcionario.Sexo = cboSexo.Text;
+            //funcionario.Cargo = cboCargo.Text;
             DialogResult result = MessageBox.Show("Tem certeza que quer excluir esse cadastro?", "Excluir", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result.Equals(DialogResult.OK))
             {

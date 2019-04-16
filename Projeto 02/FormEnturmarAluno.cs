@@ -31,16 +31,18 @@ namespace Projeto_02
 
         private void btnBuscarAlunos_Click(object sender, EventArgs e)
         {
-            aluno.MostrarAlunos();
+            dataGridView1.DataSource = aluno.MostrarAlunos();
         }
 
         private void btnBuscarTurmas_Click(object sender, EventArgs e)
         {
-            turma.MostrarTurma();
+            dataGridView1.DataSource = turma.MostrarTurma();
         }
 
         private void btnEnturmarAluno_Click(object sender, EventArgs e)
         {
+            aluno.CodAluno = int.Parse(txtCodAluno.Text);
+            aluno.Turma_CodTurma = int.Parse(txtCodTurma.Text);
             aluno.EnturmarAluno(int.Parse(txtCodAluno.Text));
         }
     }
