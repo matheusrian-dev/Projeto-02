@@ -49,6 +49,9 @@
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboCargo = new System.Windows.Forms.ComboBox();
+            this.btnBuscarProfessor = new System.Windows.Forms.Button();
             this.panelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -57,23 +60,25 @@
             // 
             this.btnExcluirProfessor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirProfessor.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirProfessor.Location = new System.Drawing.Point(726, 228);
+            this.btnExcluirProfessor.Location = new System.Drawing.Point(725, 245);
             this.btnExcluirProfessor.Name = "btnExcluirProfessor";
             this.btnExcluirProfessor.Size = new System.Drawing.Size(108, 65);
             this.btnExcluirProfessor.TabIndex = 53;
             this.btnExcluirProfessor.Text = "Excluir Professor(a)";
             this.btnExcluirProfessor.UseVisualStyleBackColor = true;
+            this.btnExcluirProfessor.Click += new System.EventHandler(this.btnExcluirProfessor_Click);
             // 
             // btnEditarProfessor
             // 
             this.btnEditarProfessor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarProfessor.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarProfessor.Location = new System.Drawing.Point(612, 228);
+            this.btnEditarProfessor.Location = new System.Drawing.Point(611, 245);
             this.btnEditarProfessor.Name = "btnEditarProfessor";
             this.btnEditarProfessor.Size = new System.Drawing.Size(108, 65);
             this.btnEditarProfessor.TabIndex = 52;
             this.btnEditarProfessor.Text = "Atualizar Professor(a)";
             this.btnEditarProfessor.UseVisualStyleBackColor = true;
+            this.btnEditarProfessor.Click += new System.EventHandler(this.btnEditarProfessor_Click);
             // 
             // label7
             // 
@@ -257,12 +262,49 @@
             this.dataGridView1.Size = new System.Drawing.Size(338, 243);
             this.dataGridView1.TabIndex = 35;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(609, 193);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 18);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Cargo:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cboCargo
+            // 
+            this.cboCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCargo.FormattingEnabled = true;
+            this.cboCargo.Items.AddRange(new object[] {
+            "Professor(a)"});
+            this.cboCargo.Location = new System.Drawing.Point(612, 214);
+            this.cboCargo.Name = "cboCargo";
+            this.cboCargo.Size = new System.Drawing.Size(230, 21);
+            this.cboCargo.TabIndex = 54;
+            // 
+            // btnBuscarProfessor
+            // 
+            this.btnBuscarProfessor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarProfessor.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarProfessor.Location = new System.Drawing.Point(12, 324);
+            this.btnBuscarProfessor.Name = "btnBuscarProfessor";
+            this.btnBuscarProfessor.Size = new System.Drawing.Size(153, 38);
+            this.btnBuscarProfessor.TabIndex = 56;
+            this.btnBuscarProfessor.Text = "Buscar Professores";
+            this.btnBuscarProfessor.UseVisualStyleBackColor = true;
+            this.btnBuscarProfessor.Click += new System.EventHandler(this.btnBuscarProfessor_Click);
+            // 
             // FormEditarProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(856, 374);
+            this.Controls.Add(this.btnBuscarProfessor);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cboCargo);
             this.Controls.Add(this.btnExcluirProfessor);
             this.Controls.Add(this.btnEditarProfessor);
             this.Controls.Add(this.label7);
@@ -315,5 +357,8 @@
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cboCargo;
+        private System.Windows.Forms.Button btnBuscarProfessor;
     }
 }

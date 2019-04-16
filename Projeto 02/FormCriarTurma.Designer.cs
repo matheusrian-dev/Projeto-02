@@ -78,6 +78,7 @@
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -90,6 +91,7 @@
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label2
             // 
@@ -156,6 +158,7 @@
             this.btnRegistrarTurma.TabIndex = 24;
             this.btnRegistrarTurma.Text = "Registrar Turma";
             this.btnRegistrarTurma.UseVisualStyleBackColor = true;
+            this.btnRegistrarTurma.Click += new System.EventHandler(this.btnRegistrarTurma_Click);
             // 
             // btnEnturmarAlunos
             // 
@@ -168,6 +171,7 @@
             this.btnEnturmarAlunos.TabIndex = 25;
             this.btnEnturmarAlunos.Text = "Enturmar Alunos";
             this.btnEnturmarAlunos.UseVisualStyleBackColor = true;
+            this.btnEnturmarAlunos.Click += new System.EventHandler(this.btnEnturmarAlunos_Click);
             // 
             // label8
             // 

@@ -51,6 +51,9 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnExcluirAluno = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCodAluno = new System.Windows.Forms.TextBox();
+            this.btnBuscarAlunos = new System.Windows.Forms.Button();
             this.panelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -76,11 +79,12 @@
             this.btnEditarAluno.TabIndex = 43;
             this.btnEditarAluno.Text = "Atualizar Cadastro do Aluno";
             this.btnEditarAluno.UseVisualStyleBackColor = true;
+            this.btnEditarAluno.Click += new System.EventHandler(this.btnEditarAluno_Click);
             // 
             // dtpDataNascimento
             // 
             this.dtpDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNascimento.Location = new System.Drawing.Point(365, 303);
+            this.dtpDataNascimento.Location = new System.Drawing.Point(365, 291);
             this.dtpDataNascimento.Name = "dtpDataNascimento";
             this.dtpDataNascimento.Size = new System.Drawing.Size(230, 20);
             this.dtpDataNascimento.TabIndex = 42;
@@ -149,7 +153,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(362, 282);
+            this.label4.Location = new System.Drawing.Point(362, 262);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 18);
             this.label4.TabIndex = 35;
@@ -160,7 +164,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(362, 212);
+            this.label3.Location = new System.Drawing.Point(362, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 18);
             this.label3.TabIndex = 34;
@@ -169,7 +173,7 @@
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(365, 240);
+            this.txtEndereco.Location = new System.Drawing.Point(365, 231);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(230, 20);
             this.txtEndereco.TabIndex = 33;
@@ -178,7 +182,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(362, 151);
+            this.label1.Location = new System.Drawing.Point(362, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 18);
             this.label1.TabIndex = 32;
@@ -187,7 +191,7 @@
             // 
             // txtNomeResponsavel
             // 
-            this.txtNomeResponsavel.Location = new System.Drawing.Point(365, 179);
+            this.txtNomeResponsavel.Location = new System.Drawing.Point(365, 171);
             this.txtNomeResponsavel.Name = "txtNomeResponsavel";
             this.txtNomeResponsavel.Size = new System.Drawing.Size(230, 20);
             this.txtNomeResponsavel.TabIndex = 31;
@@ -205,7 +209,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(365, 110);
+            this.txtNome.Location = new System.Drawing.Point(365, 111);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(230, 20);
             this.txtNome.TabIndex = 29;
@@ -243,6 +247,7 @@
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -255,6 +260,7 @@
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // dataGridView1
             // 
@@ -274,6 +280,37 @@
             this.btnExcluirAluno.TabIndex = 46;
             this.btnExcluirAluno.Text = "Excluir Cadastro do Aluno";
             this.btnExcluirAluno.UseVisualStyleBackColor = true;
+            this.btnExcluirAluno.Click += new System.EventHandler(this.btnExcluirAluno_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(362, 322);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(111, 18);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Código do Aluno:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtCodAluno
+            // 
+            this.txtCodAluno.Location = new System.Drawing.Point(365, 351);
+            this.txtCodAluno.Name = "txtCodAluno";
+            this.txtCodAluno.Size = new System.Drawing.Size(230, 20);
+            this.txtCodAluno.TabIndex = 47;
+            // 
+            // btnBuscarAlunos
+            // 
+            this.btnBuscarAlunos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarAlunos.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarAlunos.Location = new System.Drawing.Point(12, 338);
+            this.btnBuscarAlunos.Name = "btnBuscarAlunos";
+            this.btnBuscarAlunos.Size = new System.Drawing.Size(153, 38);
+            this.btnBuscarAlunos.TabIndex = 49;
+            this.btnBuscarAlunos.Text = "Buscar Alunos";
+            this.btnBuscarAlunos.UseVisualStyleBackColor = true;
+            this.btnBuscarAlunos.Click += new System.EventHandler(this.btnBuscarAlunos_Click);
             // 
             // FormEditarAluno
             // 
@@ -281,6 +318,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(898, 386);
+            this.Controls.Add(this.btnBuscarAlunos);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtCodAluno);
             this.Controls.Add(this.btnExcluirAluno);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label8);
@@ -337,5 +377,8 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnExcluirAluno;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCodAluno;
+        private System.Windows.Forms.Button btnBuscarAlunos;
     }
 }

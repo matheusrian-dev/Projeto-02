@@ -85,6 +85,7 @@
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -97,6 +98,7 @@
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label2
             // 
@@ -241,6 +243,7 @@
             this.btnCadastrarAluno.TabIndex = 26;
             this.btnCadastrarAluno.Text = "Cadastrar Aluno";
             this.btnCadastrarAluno.UseVisualStyleBackColor = true;
+            this.btnCadastrarAluno.Click += new System.EventHandler(this.btnCadastrarAluno_Click);
             // 
             // label8
             // 

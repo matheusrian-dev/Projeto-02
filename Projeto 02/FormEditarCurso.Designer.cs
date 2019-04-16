@@ -43,6 +43,7 @@
             this.txtCodCurso = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnExcluirCurso = new System.Windows.Forms.Button();
+            this.btnBuscarCursos = new System.Windows.Forms.Button();
             this.panelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +81,7 @@
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -92,17 +94,19 @@
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // btnEditarCurso
             // 
             this.btnEditarCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarCurso.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarCurso.Location = new System.Drawing.Point(327, 239);
+            this.btnEditarCurso.Location = new System.Drawing.Point(324, 239);
             this.btnEditarCurso.Name = "btnEditarCurso";
             this.btnEditarCurso.Size = new System.Drawing.Size(95, 74);
             this.btnEditarCurso.TabIndex = 34;
             this.btnEditarCurso.Text = "Atualizar Cadastro do Curso";
             this.btnEditarCurso.UseVisualStyleBackColor = true;
+            this.btnEditarCurso.Click += new System.EventHandler(this.btnEditarCurso_Click);
             // 
             // label1
             // 
@@ -145,7 +149,7 @@
             this.label8.AutoSize = true;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(566, 271);
+            this.label8.Location = new System.Drawing.Point(566, 333);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 38);
             this.label8.TabIndex = 35;
@@ -174,26 +178,40 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 54);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(306, 252);
+            this.dataGridView1.Size = new System.Drawing.Size(306, 259);
             this.dataGridView1.TabIndex = 38;
             // 
             // btnExcluirCurso
             // 
             this.btnExcluirCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluirCurso.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluirCurso.Location = new System.Drawing.Point(428, 239);
+            this.btnExcluirCurso.Location = new System.Drawing.Point(425, 239);
             this.btnExcluirCurso.Name = "btnExcluirCurso";
             this.btnExcluirCurso.Size = new System.Drawing.Size(95, 74);
             this.btnExcluirCurso.TabIndex = 39;
             this.btnExcluirCurso.Text = "Excluir Cadastro do Curso";
             this.btnExcluirCurso.UseVisualStyleBackColor = true;
+            this.btnExcluirCurso.Click += new System.EventHandler(this.btnExcluirCurso_Click);
+            // 
+            // btnBuscarCursos
+            // 
+            this.btnBuscarCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCursos.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarCursos.Location = new System.Drawing.Point(12, 330);
+            this.btnBuscarCursos.Name = "btnBuscarCursos";
+            this.btnBuscarCursos.Size = new System.Drawing.Size(153, 38);
+            this.btnBuscarCursos.TabIndex = 50;
+            this.btnBuscarCursos.Text = "Buscar Cursos";
+            this.btnBuscarCursos.UseVisualStyleBackColor = true;
+            this.btnBuscarCursos.Click += new System.EventHandler(this.btnBuscarCursos_Click);
             // 
             // FormEditarCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(626, 318);
+            this.ClientSize = new System.Drawing.Size(626, 380);
+            this.Controls.Add(this.btnBuscarCursos);
             this.Controls.Add(this.btnExcluirCurso);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
@@ -234,5 +252,6 @@
         private System.Windows.Forms.TextBox txtCodCurso;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnExcluirCurso;
+        private System.Windows.Forms.Button btnBuscarCursos;
     }
 }

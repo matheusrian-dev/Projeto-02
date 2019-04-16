@@ -85,6 +85,7 @@
             this.btnMinimizar.Size = new System.Drawing.Size(24, 28);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -97,6 +98,7 @@
             this.btnFechar.Size = new System.Drawing.Size(33, 28);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label2
             // 
@@ -235,6 +237,7 @@
             this.btnCadastrarPlanoAula.TabIndex = 32;
             this.btnCadastrarPlanoAula.Text = "Lançar Plano de Aula";
             this.btnCadastrarPlanoAula.UseVisualStyleBackColor = true;
+            this.btnCadastrarPlanoAula.Click += new System.EventHandler(this.btnCadastrarPlanoAula_Click);
             // 
             // label8
             // 

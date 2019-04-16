@@ -16,5 +16,17 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void btnRegistrarTurma_Click(object sender, EventArgs e)
+        {
+            FormCriarTurma criarT = new FormCriarTurma();
+            criarT.Show();
+        }
+
+        private void btnGerenciarTurma_Click(object sender, EventArgs e)
+        {
+            FormEditarTurma editarT = new FormEditarTurma();
+            editarT.Show();
+        }
     }
 }

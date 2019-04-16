@@ -45,6 +45,7 @@
             this.btnAtualizarPlanoAula.TabIndex = 42;
             this.btnAtualizarPlanoAula.Text = "Atualizar Plano de Aula";
             this.btnAtualizarPlanoAula.UseVisualStyleBackColor = true;
+            this.btnAtualizarPlanoAula.Click += new System.EventHandler(this.btnAtualizarPlanoAula_Click);
             // 
             // btnLancarPlanoAula
             // 
@@ -57,6 +58,7 @@
             this.btnLancarPlanoAula.TabIndex = 41;
             this.btnLancarPlanoAula.Text = "Lançar Plano de Aula";
             this.btnLancarPlanoAula.UseVisualStyleBackColor = true;
+            this.btnLancarPlanoAula.Click += new System.EventHandler(this.btnLancarPlanoAula_Click);
             // 
             // label1
             // 

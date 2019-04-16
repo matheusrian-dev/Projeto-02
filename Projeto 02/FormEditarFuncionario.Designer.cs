@@ -51,6 +51,7 @@
             this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnExcluirFuncionario = new System.Windows.Forms.Button();
+            this.btnBuscarFuncionarios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -132,6 +133,7 @@
             this.btnEditarFuncionario.TabIndex = 33;
             this.btnEditarFuncionario.Text = "Atualizar Funcionário";
             this.btnEditarFuncionario.UseVisualStyleBackColor = true;
+            this.btnEditarFuncionario.Click += new System.EventHandler(this.btnEditarFuncionario_Click);
             // 
             // label7
             // 
@@ -284,6 +286,19 @@
             this.btnExcluirFuncionario.TabIndex = 34;
             this.btnExcluirFuncionario.Text = "Excluir Funcionário";
             this.btnExcluirFuncionario.UseVisualStyleBackColor = true;
+            this.btnExcluirFuncionario.Click += new System.EventHandler(this.btnExcluirFuncionario_Click);
+            // 
+            // btnBuscarFuncionarios
+            // 
+            this.btnBuscarFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarFuncionarios.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarFuncionarios.Location = new System.Drawing.Point(12, 324);
+            this.btnBuscarFuncionarios.Name = "btnBuscarFuncionarios";
+            this.btnBuscarFuncionarios.Size = new System.Drawing.Size(153, 38);
+            this.btnBuscarFuncionarios.TabIndex = 51;
+            this.btnBuscarFuncionarios.Text = "Buscar Funcionarios";
+            this.btnBuscarFuncionarios.UseVisualStyleBackColor = true;
+            this.btnBuscarFuncionarios.Click += new System.EventHandler(this.btnBuscarFuncionarios_Click);
             // 
             // FormEditarFuncionario
             // 
@@ -291,6 +306,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(856, 374);
+            this.Controls.Add(this.btnBuscarFuncionarios);
             this.Controls.Add(this.btnExcluirFuncionario);
             this.Controls.Add(this.btnEditarFuncionario);
             this.Controls.Add(this.label7);
@@ -347,5 +363,6 @@
         private System.Windows.Forms.MaskedTextBox mskCpf;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btnExcluirFuncionario;
+        private System.Windows.Forms.Button btnBuscarFuncionarios;
     }
 }

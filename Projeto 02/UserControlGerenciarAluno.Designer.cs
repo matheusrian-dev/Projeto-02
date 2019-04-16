@@ -56,6 +56,7 @@
             this.btnGerenciarAluno.TabIndex = 20;
             this.btnGerenciarAluno.Text = "Gerenciar Aluno(a) Existente";
             this.btnGerenciarAluno.UseVisualStyleBackColor = true;
+            this.btnGerenciarAluno.Click += new System.EventHandler(this.btnGerenciarAluno_Click);
             // 
             // btnRegistrarAluno
             // 
@@ -68,6 +69,7 @@
             this.btnRegistrarAluno.TabIndex = 19;
             this.btnRegistrarAluno.Text = "Registrar Aluno(a)";
             this.btnRegistrarAluno.UseVisualStyleBackColor = true;
+            this.btnRegistrarAluno.Click += new System.EventHandler(this.btnRegistrarAluno_Click);
             // 
             // label1
             // 

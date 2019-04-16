@@ -251,6 +251,7 @@
             this.btnCadastrarFuncionario.TabIndex = 16;
             this.btnCadastrarFuncionario.Text = "Cadastrar Funcionário";
             this.btnCadastrarFuncionario.UseVisualStyleBackColor = true;
+            this.btnCadastrarFuncionario.Click += new System.EventHandler(this.btnCadastrarFuncionario_Click);
             // 
             // label8
             // 

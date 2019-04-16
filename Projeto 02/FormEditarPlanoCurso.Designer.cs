@@ -35,6 +35,8 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCodPlanoCurso = new System.Windows.Forms.TextBox();
             this.btnExcluirPlanoCurso = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtListaAtividades = new System.Windows.Forms.TextBox();
@@ -47,8 +49,6 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnBuscarPlanoCurso = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCodPlanoCurso = new System.Windows.Forms.TextBox();
             this.panelSuperior.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,6 +87,7 @@
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -99,6 +100,7 @@
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label8
             // 
@@ -130,6 +132,25 @@
             this.groupBox1.Size = new System.Drawing.Size(528, 267);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(164, 18);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Código do Plano de Curso:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtCodPlanoCurso
+            // 
+            this.txtCodPlanoCurso.Location = new System.Drawing.Point(15, 245);
+            this.txtCodPlanoCurso.Name = "txtCodPlanoCurso";
+            this.txtCodPlanoCurso.ReadOnly = true;
+            this.txtCodPlanoCurso.Size = new System.Drawing.Size(230, 20);
+            this.txtCodPlanoCurso.TabIndex = 44;
             // 
             // btnExcluirPlanoCurso
             // 
@@ -244,25 +265,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(660, 211);
             this.dataGridView1.TabIndex = 48;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 213);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 18);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "Código do Plano de Curso:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtCodPlanoCurso
-            // 
-            this.txtCodPlanoCurso.Location = new System.Drawing.Point(15, 245);
-            this.txtCodPlanoCurso.Name = "txtCodPlanoCurso";
-            this.txtCodPlanoCurso.ReadOnly = true;
-            this.txtCodPlanoCurso.Size = new System.Drawing.Size(230, 20);
-            this.txtCodPlanoCurso.TabIndex = 44;
             // 
             // FormEditarPlanoCurso
             // 

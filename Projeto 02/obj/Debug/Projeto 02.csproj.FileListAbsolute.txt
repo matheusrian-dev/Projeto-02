@@ -111,3 +111,5 @@ C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª
 C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarConteudoCurso.resources
 C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarPlanoAula.resources
 C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarPlanoCurso.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarDistribuicaoPontos.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Backup Senai\2019 - 3º módulo - 2ª matéria\Projeto 02\Projeto-02\Projeto 02\obj\Debug\Projeto_02.FormEditarTurma.resources

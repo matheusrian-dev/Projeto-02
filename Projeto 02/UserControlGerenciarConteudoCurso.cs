@@ -16,5 +16,17 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void btnRegistrarConteudoCurso_Click(object sender, EventArgs e)
+        {
+            FormInserirConteudoCurso inserirC = new FormInserirConteudoCurso();
+            inserirC.Show();
+        }
+
+        private void btnGerenciarConteudoCurso_Click(object sender, EventArgs e)
+        {
+            FormEditarConteudoCurso editarC = new FormEditarConteudoCurso();
+            editarC.Show();
+        }
     }
 }

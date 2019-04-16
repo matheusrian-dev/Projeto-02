@@ -16,5 +16,17 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void btnRegistrarPlanoCurso_Click(object sender, EventArgs e)
+        {
+            FormCriarPlanoCurso planoC = new FormCriarPlanoCurso();
+            planoC.Show();
+        }
+
+        private void btnGerenciarPlanoCurso_Click(object sender, EventArgs e)
+        {
+            FormEditarPlanoCurso editarPlanoC = new FormEditarPlanoCurso();
+            editarPlanoC.Show();
+        }
     }
 }

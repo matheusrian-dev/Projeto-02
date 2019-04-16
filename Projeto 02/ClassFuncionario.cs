@@ -91,5 +91,86 @@ namespace Projeto_02
             bd.Desconectar();
             return dt;
         }
+
+        public bool CadastrarFuncionario()
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionarios VALUES '{0}','{1}','{2}','{3}','{4}','{5}','{6}'", Cpf, Nome, Email, Senha, Cargo, Telefone, Sexo));
+                bd.Desconectar();
+                MessageBox.Show("Funcionario Cadastrado com Sucesso!");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool CadastrarProfessor()
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Funcionarios VALUES '{0}','{1}','{2}','{3}','Professor(a)','{4}','{5}'", Cpf, Nome, Email, Senha, Telefone, Sexo));
+                bd.Desconectar();
+                MessageBox.Show("Professor Cadastrado com Sucesso!");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        public bool EditarFuncionario()
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format("UPDATE Funcionario SET Nome = '" + Nome + "', Email = '" + Email + "', Senha = '" + Senha + "', Cargo = '" + Cargo + "', Telefone = '" + Telefone + "', Sexo = '" + Sexo + "', WHERE Cpf LIKE '" + Cpf + "'"));
+                bd.Desconectar();
+                MessageBox.Show("Funcionario Atualizado com Sucesso!");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool ExcluirFuncionario()
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format("DELETE FROM Funcionario WHERE CPF =" + Cpf));
+                bd.Desconectar();
+                MessageBox.Show("Funcionario Excluido com Sucesso!");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public DataTable MostrarFuncionarios()
+        {
+                bd.Conectar();
+                DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Funcionario"));
+                bd.Desconectar();
+                return dt;
+        }
+
+        public DataTable MostrarProfs()
+        {
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Funcionario WHERE cargo LIKE 'Professor(a)'"));
+            bd.Desconectar();
+            return dt;
+        }
     }
 }

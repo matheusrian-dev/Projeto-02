@@ -35,6 +35,16 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpDataAula = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtQuartoH = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtTerceiroH = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtSegundoH = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtPrimeiroH = new System.Windows.Forms.TextBox();
             this.btnExcluirPlanoAula = new System.Windows.Forms.Button();
             this.btnAtualizarPlanoAula = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,16 +55,6 @@
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.btnBuscarPlanoAula = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtQuartoH = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTerceiroH = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtSegundoH = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtPrimeiroH = new System.Windows.Forms.TextBox();
-            this.dtpDataAula = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
             this.panelSuperior.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -93,6 +93,7 @@
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -105,6 +106,7 @@
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // label8
             // 
@@ -142,6 +144,98 @@
             this.groupBox1.Size = new System.Drawing.Size(528, 348);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
+            // 
+            // dtpDataAula
+            // 
+            this.dtpDataAula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataAula.Location = new System.Drawing.Point(15, 238);
+            this.dtpDataAula.Name = "dtpDataAula";
+            this.dtpDataAula.Size = new System.Drawing.Size(230, 20);
+            this.dtpDataAula.TabIndex = 55;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(12, 210);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(88, 18);
+            this.label11.TabIndex = 54;
+            this.label11.Text = "Data da Aula:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(271, 207);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(184, 18);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Atividade do Quarto Horário:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtQuartoH
+            // 
+            this.txtQuartoH.Location = new System.Drawing.Point(274, 238);
+            this.txtQuartoH.Name = "txtQuartoH";
+            this.txtQuartoH.ReadOnly = true;
+            this.txtQuartoH.Size = new System.Drawing.Size(230, 20);
+            this.txtQuartoH.TabIndex = 52;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(271, 143);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(189, 18);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "Atividade do Terceiro Horário:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtTerceiroH
+            // 
+            this.txtTerceiroH.Location = new System.Drawing.Point(274, 174);
+            this.txtTerceiroH.Name = "txtTerceiroH";
+            this.txtTerceiroH.Size = new System.Drawing.Size(230, 20);
+            this.txtTerceiroH.TabIndex = 50;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(271, 79);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(192, 18);
+            this.label7.TabIndex = 49;
+            this.label7.Text = "Atividade do Segundo Horário:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSegundoH
+            // 
+            this.txtSegundoH.Location = new System.Drawing.Point(274, 110);
+            this.txtSegundoH.Name = "txtSegundoH";
+            this.txtSegundoH.Size = new System.Drawing.Size(230, 20);
+            this.txtSegundoH.TabIndex = 48;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(271, 15);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(194, 18);
+            this.label10.TabIndex = 47;
+            this.label10.Text = "Atividade do Primeiro Horário:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtPrimeiroH
+            // 
+            this.txtPrimeiroH.Location = new System.Drawing.Point(274, 46);
+            this.txtPrimeiroH.Name = "txtPrimeiroH";
+            this.txtPrimeiroH.Size = new System.Drawing.Size(230, 20);
+            this.txtPrimeiroH.TabIndex = 46;
             // 
             // btnExcluirPlanoAula
             // 
@@ -238,98 +332,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(660, 211);
             this.dataGridView1.TabIndex = 48;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(271, 207);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 18);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "Atividade do Quarto Horário:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtQuartoH
-            // 
-            this.txtQuartoH.Location = new System.Drawing.Point(274, 238);
-            this.txtQuartoH.Name = "txtQuartoH";
-            this.txtQuartoH.ReadOnly = true;
-            this.txtQuartoH.Size = new System.Drawing.Size(230, 20);
-            this.txtQuartoH.TabIndex = 52;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(271, 143);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(189, 18);
-            this.label6.TabIndex = 51;
-            this.label6.Text = "Atividade do Terceiro Horário:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtTerceiroH
-            // 
-            this.txtTerceiroH.Location = new System.Drawing.Point(274, 174);
-            this.txtTerceiroH.Name = "txtTerceiroH";
-            this.txtTerceiroH.Size = new System.Drawing.Size(230, 20);
-            this.txtTerceiroH.TabIndex = 50;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(271, 79);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 18);
-            this.label7.TabIndex = 49;
-            this.label7.Text = "Atividade do Segundo Horário:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtSegundoH
-            // 
-            this.txtSegundoH.Location = new System.Drawing.Point(274, 110);
-            this.txtSegundoH.Name = "txtSegundoH";
-            this.txtSegundoH.Size = new System.Drawing.Size(230, 20);
-            this.txtSegundoH.TabIndex = 48;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(271, 15);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(194, 18);
-            this.label10.TabIndex = 47;
-            this.label10.Text = "Atividade do Primeiro Horário:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtPrimeiroH
-            // 
-            this.txtPrimeiroH.Location = new System.Drawing.Point(274, 46);
-            this.txtPrimeiroH.Name = "txtPrimeiroH";
-            this.txtPrimeiroH.Size = new System.Drawing.Size(230, 20);
-            this.txtPrimeiroH.TabIndex = 46;
-            // 
-            // dtpDataAula
-            // 
-            this.dtpDataAula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataAula.Location = new System.Drawing.Point(15, 238);
-            this.dtpDataAula.Name = "dtpDataAula";
-            this.dtpDataAula.Size = new System.Drawing.Size(230, 20);
-            this.dtpDataAula.TabIndex = 55;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 210);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 18);
-            this.label11.TabIndex = 54;
-            this.label11.Text = "Data da Aula:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormEditarPlanoAula
             // 

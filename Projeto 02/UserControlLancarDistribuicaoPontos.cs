@@ -16,5 +16,11 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void UserControlLancarDistribuicaoPontos_Load(object sender, EventArgs e)
+        {
+            FormEditarDistribuicaoPontos editarDP = new FormEditarDistribuicaoPontos();
+            editarDP.Show();
+        }
     }
 }

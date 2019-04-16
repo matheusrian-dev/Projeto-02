@@ -87,49 +87,49 @@ namespace Projeto_02
         {
             funcionario.Email = txtEmail.Text;
             funcionario.Senha = txtSenha.Text;
-            //funcionario.RealizarLogin();
-            //if(funcionario.RealizarLogin == true)
-            //{
-            //    if(funcionario.Cargo == "Bibliotecário(a)" || funcionario.Cargo == "Auxiliar de Serviços Gerais" || funcionario.Cargo == "Pedagogo(a)")
-            //    {
-            //        MessageBox.Show("Bem vindo ao Sistema!" + "\n" +"Funcionário: " + funcionario.Nome + "\n"
-            //                 + "Infelizmente não há funcionalidades acessíveis"+ "\n" +" para o seu cargo." );
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Funcionário: " + funcionario.Nome + "\n"
-            //                 + "\n" + "Bem vindo ao Sistema!");
-            //        if (funcionario.Cargo == "Professor(a)")
-            //        {
-            //            FormMenuProfessor professor = new FormMenuProfessor();
-            //            this.Hide();
-            //            professor.Show();
-            //        }
-            //        else if (funcionario.Cargo == "Diretor(a)")
-            //        {
-            //            FormMenuDiretor menudiretor = new FormMenuDiretor();
-            //            this.Hide();
-            //            menudiretor.Show();
-            //        }
-            //        else if (funcionario.Cargo == "Coordenador(a)")
-            //        {
-            //            FormMenuCoordenador coordenador = new FormMenuCoordenador();
-            //            this.Hide();
-            //            coordenador.Show();
-            //        }
-            //        else if (funcionario.Cargo == "Secretário(a)")
-            //        {
-            //            FormMenuSecretaria secretaria = new FormMenuSecretaria();
-            //            this.Hide();
-            //            secretaria.Show();
-            //        }
-            //    }
-                
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Funcionário não encontrado, tente novamente.");
-            //}
+            funcionario.RealizarLogin();
+            if (funcionario.RealizarLogin() == true)
+            {
+                if (funcionario.Cargo == "Bibliotecário(a)" || funcionario.Cargo == "Auxiliar de Serviços Gerais" || funcionario.Cargo == "Pedagogo(a)")
+                {
+                    MessageBox.Show("Bem vindo ao Sistema!" + "\n" + "Funcionário: " + funcionario.Nome + "\n"
+                             + "Infelizmente não há funcionalidades acessíveis" + "\n" + " para o seu cargo.");
+                }
+                else
+                {
+                    MessageBox.Show("Funcionário: " + funcionario.Nome + "\n"
+                             + "\n" + "Bem vindo ao Sistema!");
+                    if (funcionario.Cargo == "Professor(a)")
+                    {
+                        FormMenuProfessor professor = new FormMenuProfessor();
+                        this.Hide();
+                        professor.Show();
+                    }
+                    else if (funcionario.Cargo == "Diretor(a)")
+                    {
+                        FormMenuDiretor menudiretor = new FormMenuDiretor();
+                        this.Hide();
+                        menudiretor.Show();
+                    }
+                    else if (funcionario.Cargo == "Coordenador(a)")
+                    {
+                        FormMenuCoordenador coordenador = new FormMenuCoordenador();
+                        this.Hide();
+                        coordenador.Show();
+                    }
+                    else if (funcionario.Cargo == "Secretário(a)")
+                    {
+                        FormMenuSecretaria secretaria = new FormMenuSecretaria();
+                        this.Hide();
+                        secretaria.Show();
+                    }
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Funcionário não encontrado, tente novamente.");
+            }
         }
 
         private void btnShowHidePassword_Click(object sender, EventArgs e)

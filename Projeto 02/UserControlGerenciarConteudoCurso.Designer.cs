@@ -56,6 +56,7 @@
             this.btnGerenciarConteudoCurso.TabIndex = 20;
             this.btnGerenciarConteudoCurso.Text = "Gerenciar Conteúdo do Curso Existente";
             this.btnGerenciarConteudoCurso.UseVisualStyleBackColor = true;
+            this.btnGerenciarConteudoCurso.Click += new System.EventHandler(this.btnGerenciarConteudoCurso_Click);
             // 
             // btnRegistrarConteudoCurso
             // 
@@ -68,6 +69,7 @@
             this.btnRegistrarConteudoCurso.TabIndex = 19;
             this.btnRegistrarConteudoCurso.Text = "Registrar Conteúdo do Curso";
             this.btnRegistrarConteudoCurso.UseVisualStyleBackColor = true;
+            this.btnRegistrarConteudoCurso.Click += new System.EventHandler(this.btnRegistrarConteudoCurso_Click);
             // 
             // label1
             // 

@@ -16,5 +16,17 @@ namespace Projeto_02
         {
             InitializeComponent();
         }
+
+        private void btnRegistrarAluno_Click(object sender, EventArgs e)
+        {
+            FormCadastrarAluno cadastrarA = new FormCadastrarAluno();
+            cadastrarA.Show();
+        }
+
+        private void btnGerenciarAluno_Click(object sender, EventArgs e)
+        {
+            FormEditarAluno editarA = new FormEditarAluno();
+            editarA.Show();
+        }
     }
 }

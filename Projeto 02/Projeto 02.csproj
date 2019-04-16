@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="ClassAcessoBD.cs" />
     <Compile Include="ClassAluno.cs" />
-    <Compile Include="ClassBoletim.cs" />
     <Compile Include="ClassCertificado.cs" />
     <Compile Include="ClassCurso.cs" />
     <Compile Include="ClassDiploma.cs" />
@@ -155,6 +154,12 @@
     </Compile>
     <Compile Include="FormEditarProfessor.Designer.cs">
       <DependentUpon>FormEditarProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarTurma.Designer.cs">
+      <DependentUpon>FormEditarTurma.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEnturmarAluno.cs">
       <SubType>Form</SubType>
@@ -364,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditarProfessor.resx">
       <DependentUpon>FormEditarProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarTurma.resx">
+      <DependentUpon>FormEditarTurma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEnturmarAluno.resx">
       <DependentUpon>FormEnturmarAluno.cs</DependentUpon>

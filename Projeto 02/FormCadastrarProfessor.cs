@@ -12,6 +12,7 @@ namespace Projeto_02
 {
     public partial class FormCadastrarProfessor : Form
     {
+        ClassFuncionario funcionario = new ClassFuncionario();
         public FormCadastrarProfessor()
         {
             InitializeComponent();
@@ -25,6 +26,17 @@ namespace Projeto_02
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCadastrarProfessor_Click(object sender, EventArgs e)
+        {
+            funcionario.Cpf = mskCpf.Text;
+            funcionario.Nome = txtNome.Text;
+            funcionario.Email = txtEmail.Text;
+            funcionario.Senha = txtSenha.Text;
+            funcionario.Sexo = cboSexo.Text;
+            funcionario.Telefone = mskTelefone.Text;
+            funcionario.CadastrarProfessor();
         }
     }
 }

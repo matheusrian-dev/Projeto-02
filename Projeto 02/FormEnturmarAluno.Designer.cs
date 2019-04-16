@@ -74,11 +74,12 @@
             this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Location = new System.Drawing.Point(570, 7);
+            this.btnMinimizar.Location = new System.Drawing.Point(578, 7);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(36, 32);
             this.btnMinimizar.TabIndex = 3;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnFechar
             // 
@@ -86,11 +87,12 @@
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFechar.FlatAppearance.BorderSize = 0;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Location = new System.Drawing.Point(612, 7);
+            this.btnFechar.Location = new System.Drawing.Point(620, 7);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(45, 32);
             this.btnFechar.TabIndex = 2;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // dataGridView1
             // 
@@ -147,6 +149,7 @@
             this.btnBuscarAlunos.TabIndex = 26;
             this.btnBuscarAlunos.Text = "Buscar Alunos ";
             this.btnBuscarAlunos.UseVisualStyleBackColor = true;
+            this.btnBuscarAlunos.Click += new System.EventHandler(this.btnBuscarAlunos_Click);
             // 
             // btnBuscarTurmas
             // 
@@ -159,6 +162,7 @@
             this.btnBuscarTurmas.TabIndex = 27;
             this.btnBuscarTurmas.Text = "Buscar Turmas";
             this.btnBuscarTurmas.UseVisualStyleBackColor = true;
+            this.btnBuscarTurmas.Click += new System.EventHandler(this.btnBuscarTurmas_Click);
             // 
             // btnEnturmarAluno
             // 
@@ -171,6 +175,7 @@
             this.btnEnturmarAluno.TabIndex = 28;
             this.btnEnturmarAluno.Text = "Enturmar Aluno";
             this.btnEnturmarAluno.UseVisualStyleBackColor = true;
+            this.btnEnturmarAluno.Click += new System.EventHandler(this.btnEnturmarAluno_Click);
             // 
             // label8
             // 

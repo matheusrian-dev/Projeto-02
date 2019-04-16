@@ -20,15 +20,15 @@ namespace Projeto_02
         private void btnEnviarSenha_Click(object sender, EventArgs e)
         {
             ClassFuncionario funcionario = new ClassFuncionario();
-            //funcionario.EsqueceuSenha(txtEmail.Text);
-            //if (funcionario.EsqueceuSenha(txtEmail.Text) == true)
-            //{
-            //    MessageBox.Show("Email Enviado com Sucesso!");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Email não Encontrado.");
-            //}
+            funcionario.EsqueceuSenha(txtEmail.Text);
+            if (funcionario.EsqueceuSenha(txtEmail.Text) == true)
+            {
+                MessageBox.Show("Email Enviado com Sucesso!");
+            }
+            else
+            {
+                MessageBox.Show("Email não Encontrado.");
+            }
         }
     }
 }

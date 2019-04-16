@@ -56,6 +56,7 @@
             this.btnGerenciarPlanoCurso.TabIndex = 24;
             this.btnGerenciarPlanoCurso.Text = "Gerenciar Plano do Curso Existente";
             this.btnGerenciarPlanoCurso.UseVisualStyleBackColor = true;
+            this.btnGerenciarPlanoCurso.Click += new System.EventHandler(this.btnGerenciarPlanoCurso_Click);
             // 
             // btnRegistrarPlanoCurso
             // 
@@ -68,6 +69,7 @@
             this.btnRegistrarPlanoCurso.TabIndex = 23;
             this.btnRegistrarPlanoCurso.Text = "Registrar Plano do Curso";
             this.btnRegistrarPlanoCurso.UseVisualStyleBackColor = true;
+            this.btnRegistrarPlanoCurso.Click += new System.EventHandler(this.btnRegistrarPlanoCurso_Click);
             // 
             // label1
             // 

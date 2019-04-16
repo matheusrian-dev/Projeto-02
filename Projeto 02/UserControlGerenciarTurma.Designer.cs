@@ -56,6 +56,7 @@
             this.btnGerenciarTurma.TabIndex = 24;
             this.btnGerenciarTurma.Text = "Gerenciar Turma Existente";
             this.btnGerenciarTurma.UseVisualStyleBackColor = true;
+            this.btnGerenciarTurma.Click += new System.EventHandler(this.btnGerenciarTurma_Click);
             // 
             // btnRegistrarTurma
             // 
@@ -68,6 +69,7 @@
             this.btnRegistrarTurma.TabIndex = 23;
             this.btnRegistrarTurma.Text = "Registrar Turma";
             this.btnRegistrarTurma.UseVisualStyleBackColor = true;
+            this.btnRegistrarTurma.Click += new System.EventHandler(this.btnRegistrarTurma_Click);
             // 
             // label1
             // 

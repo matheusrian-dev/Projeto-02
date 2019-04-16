@@ -33,22 +33,22 @@
             this.btnGerenciarDistribuicaoPontos = new System.Windows.Forms.Button();
             this.btnRegistrarDistribuicaoPontos = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCodTurma = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtValorAtividade1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtValorAtividade2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtNomeResponsavel = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtValorAtividade4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtValorProvaInicial = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtValorAtividade3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtValorProvaFinal = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtValorAtividade3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtValorProvaInicial = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtValorAtividade4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNomeResponsavel = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtValorAtividade2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtValorAtividade1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCodTurma = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,113 +122,23 @@
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             // 
-            // label2
+            // label10
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 18);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Código da Turma";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(385, 195);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(131, 18);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "Valor da Prova Final";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtCodTurma
+            // txtValorProvaFinal
             // 
-            this.txtCodTurma.Location = new System.Drawing.Point(18, 49);
-            this.txtCodTurma.Name = "txtCodTurma";
-            this.txtCodTurma.Size = new System.Drawing.Size(230, 20);
-            this.txtCodTurma.TabIndex = 17;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 18);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Valor da Atividade 01:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtValorAtividade1
-            // 
-            this.txtValorAtividade1.Location = new System.Drawing.Point(18, 107);
-            this.txtValorAtividade1.Name = "txtValorAtividade1";
-            this.txtValorAtividade1.Size = new System.Drawing.Size(230, 20);
-            this.txtValorAtividade1.TabIndex = 19;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 18);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Valor da Atividade 02:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtValorAtividade2
-            // 
-            this.txtValorAtividade2.Location = new System.Drawing.Point(18, 165);
-            this.txtValorAtividade2.Name = "txtValorAtividade2";
-            this.txtValorAtividade2.Size = new System.Drawing.Size(230, 20);
-            this.txtValorAtividade2.TabIndex = 21;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(385, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 18);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Nome do Instrutor Responsável";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtNomeResponsavel
-            // 
-            this.txtNomeResponsavel.Location = new System.Drawing.Point(388, 49);
-            this.txtNomeResponsavel.Name = "txtNomeResponsavel";
-            this.txtNomeResponsavel.Size = new System.Drawing.Size(230, 20);
-            this.txtNomeResponsavel.TabIndex = 23;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(385, 79);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 18);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Valor da Atividade 04:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtValorAtividade4
-            // 
-            this.txtValorAtividade4.Location = new System.Drawing.Point(388, 107);
-            this.txtValorAtividade4.Name = "txtValorAtividade4";
-            this.txtValorAtividade4.Size = new System.Drawing.Size(230, 20);
-            this.txtValorAtividade4.TabIndex = 25;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(385, 137);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(141, 18);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Valor da Prova Inicial:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtValorProvaInicial
-            // 
-            this.txtValorProvaInicial.Location = new System.Drawing.Point(388, 165);
-            this.txtValorProvaInicial.Name = "txtValorProvaInicial";
-            this.txtValorProvaInicial.Size = new System.Drawing.Size(230, 20);
-            this.txtValorProvaInicial.TabIndex = 27;
+            this.txtValorProvaFinal.Location = new System.Drawing.Point(388, 223);
+            this.txtValorProvaFinal.Name = "txtValorProvaFinal";
+            this.txtValorProvaFinal.Size = new System.Drawing.Size(230, 20);
+            this.txtValorProvaFinal.TabIndex = 31;
             // 
             // label9
             // 
@@ -248,23 +158,113 @@
             this.txtValorAtividade3.Size = new System.Drawing.Size(230, 20);
             this.txtValorAtividade3.TabIndex = 29;
             // 
-            // label10
+            // label7
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(385, 195);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 18);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "Valor da Prova Final";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(385, 137);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(141, 18);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Valor da Prova Inicial:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtValorProvaFinal
+            // txtValorProvaInicial
             // 
-            this.txtValorProvaFinal.Location = new System.Drawing.Point(388, 223);
-            this.txtValorProvaFinal.Name = "txtValorProvaFinal";
-            this.txtValorProvaFinal.Size = new System.Drawing.Size(230, 20);
-            this.txtValorProvaFinal.TabIndex = 31;
+            this.txtValorProvaInicial.Location = new System.Drawing.Point(388, 165);
+            this.txtValorProvaInicial.Name = "txtValorProvaInicial";
+            this.txtValorProvaInicial.Size = new System.Drawing.Size(230, 20);
+            this.txtValorProvaInicial.TabIndex = 27;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(385, 79);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 18);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Valor da Atividade 04:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtValorAtividade4
+            // 
+            this.txtValorAtividade4.Location = new System.Drawing.Point(388, 107);
+            this.txtValorAtividade4.Name = "txtValorAtividade4";
+            this.txtValorAtividade4.Size = new System.Drawing.Size(230, 20);
+            this.txtValorAtividade4.TabIndex = 25;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(385, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(198, 18);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Nome do Instrutor Responsável";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtNomeResponsavel
+            // 
+            this.txtNomeResponsavel.Location = new System.Drawing.Point(388, 49);
+            this.txtNomeResponsavel.Name = "txtNomeResponsavel";
+            this.txtNomeResponsavel.Size = new System.Drawing.Size(230, 20);
+            this.txtNomeResponsavel.TabIndex = 23;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(141, 18);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Valor da Atividade 02:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtValorAtividade2
+            // 
+            this.txtValorAtividade2.Location = new System.Drawing.Point(18, 165);
+            this.txtValorAtividade2.Name = "txtValorAtividade2";
+            this.txtValorAtividade2.Size = new System.Drawing.Size(230, 20);
+            this.txtValorAtividade2.TabIndex = 21;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(141, 18);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Valor da Atividade 01:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtValorAtividade1
+            // 
+            this.txtValorAtividade1.Location = new System.Drawing.Point(18, 107);
+            this.txtValorAtividade1.Name = "txtValorAtividade1";
+            this.txtValorAtividade1.Size = new System.Drawing.Size(230, 20);
+            this.txtValorAtividade1.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 18);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Código da Turma";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtCodTurma
+            // 
+            this.txtCodTurma.Location = new System.Drawing.Point(18, 49);
+            this.txtCodTurma.Name = "txtCodTurma";
+            this.txtCodTurma.Size = new System.Drawing.Size(230, 20);
+            this.txtCodTurma.TabIndex = 17;
             // 
             // UserControlLancarDistribuicaoPontos
             // 
@@ -278,6 +278,7 @@
             this.Controls.Add(this.label8);
             this.Name = "UserControlLancarDistribuicaoPontos";
             this.Size = new System.Drawing.Size(710, 367);
+            this.Load += new System.EventHandler(this.UserControlLancarDistribuicaoPontos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

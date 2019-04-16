@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodTurma = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtCodAluno = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -109,17 +109,17 @@
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(388, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 18);
+            this.label3.Size = new System.Drawing.Size(111, 18);
             this.label3.TabIndex = 43;
-            this.label3.Text = "Nome do Aluno:";
+            this.label3.Text = "Código do Aluno:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtNome
+            // txtCodAluno
             // 
-            this.txtNome.Location = new System.Drawing.Point(391, 153);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(230, 20);
-            this.txtNome.TabIndex = 42;
+            this.txtCodAluno.Location = new System.Drawing.Point(391, 153);
+            this.txtCodAluno.Name = "txtCodAluno";
+            this.txtCodAluno.Size = new System.Drawing.Size(230, 20);
+            this.txtCodAluno.TabIndex = 42;
             // 
             // label4
             // 
@@ -148,8 +148,8 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Presença",
-            "Falta"});
+            "Presente",
+            "Ausente"});
             this.comboBox1.Location = new System.Drawing.Point(391, 208);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(230, 21);
@@ -173,7 +173,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.txtCodAluno);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodTurma);
             this.Controls.Add(this.dataGridView1);
@@ -196,7 +196,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodTurma;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtCodAluno;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;

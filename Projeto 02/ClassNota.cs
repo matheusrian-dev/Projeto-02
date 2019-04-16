@@ -11,11 +11,75 @@ namespace Projeto_02
         public int CodNota { get; set; }
         public int Aluno_CodAluno { get; set; }
         public int DistribuicaoPontos_CodDistribuicaoPontos { get; set; }
-        public decimal notaAtividade01 { get; set; }
-        public decimal notaAtividade02 { get; set; }
-        public decimal notaAtividade03 { get; set; }
-        public decimal notaAtividade04 { get; set; }
-        public decimal notaProvaInicial { get; set; }
-        public decimal notaProvaFinal { get; set; }
+        public decimal NotaAtividade01 { get; set; }
+        public decimal NotaAtividade02 { get; set; }
+        public decimal NotaAtividade03 { get; set; }
+        public decimal NotaAtividade04 { get; set; }
+        public decimal NotaProvaInicial { get; set; }
+        public decimal NotaProvaFinal { get; set; }
+
+        ClassAcessoBD bd = new ClassAcessoBD();
+
+        public bool InserirNotas()
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Nota VALUES '"+ NotaAtividade01 +"','"+ NotaAtividade02 +"','"+ NotaAtividade03 +"', "+NotaAtividade04+", "+NotaProvaInicial+", "+ NotaProvaFinal +", "+ Aluno_CodAluno +", "+DistribuicaoPontos_CodDistribuicaoPontos+""));
+                bd.Desconectar();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        public bool EditarNotas()
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format(" UPDATE Nota SET " + " Aluno_CodAluno = '" + Aluno_CodAluno + "', notaAtividade01 = '" + NotaAtividade01 + ",  notaAtividade02 = '" + NotaAtividade02 + ", notaAtividade03 = '" + NotaAtividade03 + ", notaAtividade04 = '" + NotaAtividade04 + ", notaProvaInicial = '" + NotaProvaInicial + ",  notaProvaFinal = '" + NotaProvaFinal + " Aluno_codAluno = '" + Aluno_CodAluno + ", Distribuicao_codDistribuicao = '" + DistribuicaoPontos_CodDistribuicaoPontos + "   WHERE codNota LIKE " + CodNota));
+                bd.Desconectar();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool ExcluirNota()
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format("DELETE FROM Nota WHERE  CodNota = " + CodNota + ""));
+                bd.Desconectar();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        public bool GerarBoletim(int codAluno)
+        {
+            try
+            {
+                bd.Conectar();
+                bd.ExecutarComandosSql(String.Format("SELECT * FROM Nota WHERE Aluno_codAluno = " + codAluno + ""));
+                bd.Desconectar();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

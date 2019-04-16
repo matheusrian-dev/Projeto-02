@@ -8,9 +8,9 @@ namespace Projeto_02
 {
     class ClassFrequenciaAluno
     {
+        public int CodFrequencia { get; set; }
         public DateTime dataAula { get; set; }
         public int CodAluno { get; set; }
-        public string NomeAluno { get; set; }
         public string StatusFrequencia { get; set; }
     }
 }
